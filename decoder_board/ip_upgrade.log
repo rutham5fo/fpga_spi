@@ -1,0 +1,2360 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:35:02 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_pll_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_pll_decoder_top_v3_pll_0_0 (xilinx.com:user:decoder_top_v3_pll:3.0_pll) from (Rev. 89) to (Rev. 90)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:35:01 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 244) to (Rev. 245)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_pll_0'
+
+-Upgrade has removed port 'spi_clk_pll_180'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:27:43 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_pll_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_pll_decoder_top_v3_pll_0_0 (xilinx.com:user:decoder_top_v3_pll:3.0_pll) from (Rev. 88) to (Rev. 89)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_pll_decoder_top_v3_pll_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_0'
+
+-Upgrade has removed port 'spi_clk_180'
+
+-Upgrade has added port 'spi_clk_pll_0'
+
+-Upgrade has added port 'spi_clk_pll_180'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'SPI_PING_PONG_SIZE' is no longer present on the upgraded IP 'decoder_sys_pll_decoder_top_v3_pll_0_0', and cannot be set to '4'
+
+Parameter 'SPI_SAMPLER_SIZE' is no longer present on the upgraded IP 'decoder_sys_pll_decoder_top_v3_pll_0_0', and cannot be set to '2'
+
+Parameter 'READ_BIT_COMP' is no longer present on the upgraded IP 'decoder_sys_pll_decoder_top_v3_pll_0_0', and cannot be set to '0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:decoder_top_v3_pll:3.0_pll -user_name decoder_sys_pll_decoder_top_v3_pll_0_0
+set_property -dict "\
+  CONFIG.COMMS_DEBUG {false} \
+  CONFIG.CTRL_REG_NUM {1} \
+  CONFIG.Component_Name {decoder_sys_pll_decoder_top_v3_pll_0_0} \
+  CONFIG.DATA_WIDTH {32} \
+  CONFIG.ERROR_COUNT_WIDTH {4} \
+  CONFIG.LEDS_REG_NUM {15} \
+  CONFIG.MAX_ERROR_COUNT {15} \
+  CONFIG.NUM_REGS_PER_BANK {16} \
+  CONFIG.REG_BANK_ADDR_WIDTH {4} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} \
+  CONFIG.STAT_REG_NUM {0} " [get_ips decoder_sys_pll_decoder_top_v3_pll_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 16:40:57 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_pll_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 243) to (Rev. 244)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 16:40:56 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 243) to (Rev. 244)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 16:39:48 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_pll_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 242) to (Rev. 243)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 16:39:47 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 242) to (Rev. 243)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 15:56:18 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_pll_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 241) to (Rev. 242)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 15:56:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 241) to (Rev. 242)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 15:52:09 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_pll_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 240) to (Rev. 241)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_pll_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_pll_fb_in'
+
+-Upgrade has removed port 'spi_clk_pll_fb_out'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 15:52:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 240) to (Rev. 241)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_pll_fb_in'
+
+-Upgrade has removed port 'spi_clk_pll_fb_out'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 15:41:53 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_pll_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 239) to (Rev. 240)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 15:41:52 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 239) to (Rev. 240)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 14:51:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_pll_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 238) to (Rev. 239)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 14:51:07 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 238) to (Rev. 239)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 14:47:48 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_pll_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_pll_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 237) to (Rev. 238)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_pll_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'spi_clk_pll_0'
+
+-Upgrade has added port 'spi_clk_pll_180'
+
+-Upgrade has added port 'spi_clk_pll_fb_in'
+
+-Upgrade has added port 'spi_clk_pll_fb_out'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 14:47:47 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 237) to (Rev. 238)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'spi_clk_pll_0'
+
+-Upgrade has added port 'spi_clk_pll_180'
+
+-Upgrade has added port 'spi_clk_pll_fb_in'
+
+-Upgrade has added port 'spi_clk_pll_fb_out'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 21:43:54 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 236) to (Rev. 237)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 20:30:14 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 235) to (Rev. 236)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 20:28:18 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 234) to (Rev. 235)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 20:22:12 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 233) to (Rev. 234)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 19:21:49 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 232) to (Rev. 233)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 19:11:58 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 231) to (Rev. 232)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 17:26:02 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 230) to (Rev. 231)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 16:50:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 229) to (Rev. 230)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 16:32:01 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 228) to (Rev. 229)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 16:20:43 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 227) to (Rev. 228)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 14:59:57 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 226) to (Rev. 227)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 12:58:28 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 225) to (Rev. 226)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 12:57:27 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 220) to (Rev. 225)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 15:41:43 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 219) to (Rev. 220)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 15:28:04 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 218) to (Rev. 219)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 15:07:29 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 217) to (Rev. 218)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 14:53:14 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 216) to (Rev. 217)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'SPI_PING_PONG_SIZE' is no longer present on the upgraded IP 'decoder_sys_decoder_top_v3_0_0', and cannot be set to '4'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:decoder_top_v3:3.0 -user_name decoder_sys_decoder_top_v3_0_0
+set_property -dict "\
+  CONFIG.COMMS_DEBUG {true} \
+  CONFIG.CTRL_REG_NUM {1} \
+  CONFIG.Component_Name {decoder_sys_decoder_top_v3_0_0} \
+  CONFIG.DATA_WIDTH {32} \
+  CONFIG.ERROR_COUNT_WIDTH {4} \
+  CONFIG.LEDS_REG_NUM {15} \
+  CONFIG.MAX_ERROR_COUNT {15} \
+  CONFIG.NUM_REGS_PER_BANK {16} \
+  CONFIG.REG_BANK_ADDR_WIDTH {4} \
+  CONFIG.SHIFT_IN_COMP {0} \
+  CONFIG.SHIFT_OUT_COMP {0} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} \
+  CONFIG.STAT_REG_NUM {0} " [get_ips decoder_sys_decoder_top_v3_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 14:32:39 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 213) to (Rev. 216)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 02:56:20 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 212) to (Rev. 213)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 01:19:54 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 211) to (Rev. 212)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 01:15:32 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 210) to (Rev. 211)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 01:04:03 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 209) to (Rev. 210)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 00:43:39 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 208) to (Rev. 209)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 00:07:43 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 207) to (Rev. 208)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 23:55:34 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 206) to (Rev. 207)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 23:33:59 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 205) to (Rev. 206)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 23:31:05 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 204) to (Rev. 205)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 22:19:57 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 194) to (Rev. 204)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_pll_0'
+
+-Upgrade has removed port 'spi_clk_pll_180'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 11:31:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 193) to (Rev. 194)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 11:16:56 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 189) to (Rev. 193)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_en'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 17:45:14 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 188) to (Rev. 189)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 17:44:50 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 188)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 17:24:39 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 181) to (Rev. 188)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 15:27:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 180) to (Rev. 181)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 15:20:59 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 179) to (Rev. 180)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 14:26:23 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 178) to (Rev. 179)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 14:06:03 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 177) to (Rev. 178)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 13:50:06 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 176) to (Rev. 177)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 12:55:52 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 175) to (Rev. 176)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 12:31:20 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 174) to (Rev. 175)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 10:44:21 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 172) to (Rev. 174)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 02:21:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 153) to (Rev. 172)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_fb'
+
+-Upgrade has removed port 'spi_clk_to_pll'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'SPI_SAMPLER_SIZE' is no longer present on the upgraded IP 'decoder_sys_decoder_top_v3_0_0', and cannot be set to '2'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:decoder_top_v3:3.0 -user_name decoder_sys_decoder_top_v3_0_0
+set_property -dict "\
+  CONFIG.COMMS_DEBUG {true} \
+  CONFIG.CTRL_REG_NUM {1} \
+  CONFIG.Component_Name {decoder_sys_decoder_top_v3_0_0} \
+  CONFIG.DATA_WIDTH {32} \
+  CONFIG.ERROR_COUNT_WIDTH {4} \
+  CONFIG.LEDS_REG_NUM {15} \
+  CONFIG.MAX_ERROR_COUNT {15} \
+  CONFIG.NUM_REGS_PER_BANK {16} \
+  CONFIG.REG_BANK_ADDR_WIDTH {4} \
+  CONFIG.SHIFT_IN_COMP {0} \
+  CONFIG.SHIFT_OUT_COMP {0} \
+  CONFIG.SPI_PING_PONG_SIZE {4} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} \
+  CONFIG.STAT_REG_NUM {0} " [get_ips decoder_sys_decoder_top_v3_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 19:47:11 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 137) to (Rev. 153)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 08:57:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 135) to (Rev. 137)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 08:20:35 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 134) to (Rev. 135)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 08:18:05 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 127) to (Rev. 134)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 18:09:44 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 126) to (Rev. 127)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 17:53:06 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 125) to (Rev. 126)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 17:37:18 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 116) to (Rev. 125)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 14:55:11 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 115) to (Rev. 116)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 14:29:56 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 114) to (Rev. 115)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 11:06:38 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 113) to (Rev. 114)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 23:49:31 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 112) to (Rev. 113)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 23:32:34 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 111) to (Rev. 112)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 22:26:54 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 110) to (Rev. 111)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 22:18:40 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 109) to (Rev. 110)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 21:09:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 108) to (Rev. 109)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 20:51:05 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 107) to (Rev. 108)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 17:28:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 102) to (Rev. 107)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 16:13:30 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 101) to (Rev. 102)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul  7 19:21:28 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 100) to (Rev. 101)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul  7 19:10:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 99) to (Rev. 100)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul  7 18:47:13 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 98) to (Rev. 99)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul  7 13:47:22 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 97) to (Rev. 98)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul  7 13:39:00 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 96) to (Rev. 97)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 21:21:50 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 95) to (Rev. 96)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 21:11:27 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 94) to (Rev. 95)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 20:50:36 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 92) to (Rev. 94)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 20:39:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 91) to (Rev. 92)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 20:01:33 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 90) to (Rev. 91)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 19:57:40 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 32) to (Rev. 90)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk'
+
+-Upgrade has added port 'spi_clk_en'
+
+-Upgrade has added port 'spi_clk_ext'
+
+-Upgrade has added port 'spi_clk_fb'
+
+-Upgrade has added port 'spi_clk_pll_0'
+
+-Upgrade has added port 'spi_clk_pll_180'
+
+-Upgrade has added port 'spi_clk_to_pll'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'CONTROL_SAMPLER_SIZE' is no longer present on the upgraded IP 'decoder_sys_decoder_top_v3_0_0', and cannot be set to '3'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:decoder_top_v3:3.0 -user_name decoder_sys_decoder_top_v3_0_0
+set_property -dict "\
+  CONFIG.CTRL_REG_NUM {1} \
+  CONFIG.Component_Name {decoder_sys_decoder_top_v3_0_0} \
+  CONFIG.DATA_WIDTH {32} \
+  CONFIG.ERROR_COUNT_WIDTH {4} \
+  CONFIG.MAX_ERROR_COUNT {15} \
+  CONFIG.NUM_REGS_PER_BANK {16} \
+  CONFIG.REG_BANK_ADDR_WIDTH {4} \
+  CONFIG.SPI_PING_PONG_SIZE {4} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_SAMPLER_SIZE {2} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} \
+  CONFIG.STAT_REG_NUM {0} " [get_ips decoder_sys_decoder_top_v3_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 22:43:23 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 31) to (Rev. 32)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 22:38:45 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 29) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 20:53:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 28) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 20:39:22 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 16:36:06 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 15:28:01 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 25) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 14:42:43 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 14:35:52 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 20) to (Rev. 24)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_feedback'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jun 22 03:40:38 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 19) to (Rev. 20)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'decoder_sys_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'spi_clk_feedback'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jun 22 03:37:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decoder_sys_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of decoder_sys_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 18) to (Rev. 19)
+

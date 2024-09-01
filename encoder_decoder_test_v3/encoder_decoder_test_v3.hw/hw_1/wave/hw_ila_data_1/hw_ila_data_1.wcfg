@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_decoder_test_v3/encoder_decoder_test_v3.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="4"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="578"></NameColumnWidth>
+      <ValueColumnWidth column_width="174"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_cs_n_buffered" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_cs_n_buffered</obj_property>
+      <obj_property name="ObjectShortName">spi_cs_n_buffered</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_data_out" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_data_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_interface/distru_n" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_interface/distru_n</obj_property>
+      <obj_property name="ObjectShortName">distru_n</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_interface/distru_p" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_interface/distru_p</obj_property>
+      <obj_property name="ObjectShortName">distru_p</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_interface/driver_out_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">driver_out_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_interface/miso_reg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_interface/miso_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">miso_reg[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_interface/spi_clk_iob" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_interface/spi_clk_iob</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_iob</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_interface/spi_n_data" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_interface/spi_n_data</obj_property>
+      <obj_property name="ObjectShortName">spi_n_data</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_interface/spi_p_data" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_interface/spi_p_data</obj_property>
+      <obj_property name="ObjectShortName">spi_p_data</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_read_en_stable" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_read_en_stable</obj_property>
+      <obj_property name="ObjectShortName">spi_read_en_stable</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_wr_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_wr_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_wr_addr[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_write_en_stable" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_write_en_stable</obj_property>
+      <obj_property name="ObjectShortName">spi_write_en_stable</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_test_v3_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_test_v3_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug[5:0]</obj_property>
+      <obj_property name="ObjectShortName">in_shift_count_debug[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

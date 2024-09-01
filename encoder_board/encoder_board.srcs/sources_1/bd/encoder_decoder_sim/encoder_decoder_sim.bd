@@ -1,0 +1,412 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x30318C01B5B8EF89",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim",
+      "name": "encoder_decoder_sim",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2022.1"
+    },
+    "design_tree": {
+      "axi_spi_interface_0": "",
+      "axi_vip_0": "",
+      "clk_wiz_0": "",
+      "decoder_top_v3_0": ""
+    },
+    "ports": {
+      "reset_n": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "sys_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "errors_corrected": {
+        "type": "data",
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "axi_spi_interface_0": {
+        "vlnv": "xilinx.com:user:axi_spi_interface:1.0",
+        "xci_name": "encoder_decoder_sim_axi_spi_interface_0_0",
+        "xci_path": "ip\\encoder_decoder_sim_axi_spi_interface_0_0\\encoder_decoder_sim_axi_spi_interface_0_0.xci",
+        "inst_hier_path": "axi_spi_interface_0",
+        "parameters": {
+          "SPI_CLK_FB_DELAY_WIDTH": {
+            "value": "4"
+          },
+          "SPI_DUMMY_BITS_BEG": {
+            "value": "1"
+          },
+          "SPI_DUMMY_BITS_END": {
+            "value": "1"
+          },
+          "SPI_INIT_INTERVAL": {
+            "value": "1"
+          },
+          "SPI_SHIFT_IN_COMP": {
+            "value": "1"
+          }
+        }
+      },
+      "axi_vip_0": {
+        "vlnv": "xilinx.com:ip:axi_vip:1.1",
+        "xci_name": "encoder_decoder_sim_axi_vip_0_0",
+        "xci_path": "ip\\encoder_decoder_sim_axi_vip_0_0\\encoder_decoder_sim_axi_vip_0_0.xci",
+        "inst_hier_path": "axi_vip_0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "32"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_PROT": {
+            "value": "1"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "INTERFACE_MODE": {
+            "value": "MASTER"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          }
+        },
+        "interface_ports": {
+          "M_AXI": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Master_AXI",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Master_AXI": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "encoder_decoder_sim_clk_wiz_0_0",
+        "xci_path": "ip\\encoder_decoder_sim_clk_wiz_0_0\\encoder_decoder_sim_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "159.475"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "105.461"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "159.475"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "105.461"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "CLKOUT2_REQUESTED_PHASE": {
+            "value": "180.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLKOUT3_JITTER": {
+            "value": "137.681"
+          },
+          "CLKOUT3_PHASE_ERROR": {
+            "value": "105.461"
+          },
+          "CLKOUT3_USED": {
+            "value": "true"
+          },
+          "CLKOUT4_JITTER": {
+            "value": "137.681"
+          },
+          "CLKOUT4_PHASE_ERROR": {
+            "value": "105.461"
+          },
+          "CLKOUT4_REQUESTED_PHASE": {
+            "value": "10.000"
+          },
+          "CLKOUT4_USED": {
+            "value": "true"
+          },
+          "CLKOUT5_JITTER": {
+            "value": "159.475"
+          },
+          "CLKOUT5_PHASE_ERROR": {
+            "value": "105.461"
+          },
+          "CLKOUT5_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "CLKOUT5_USED": {
+            "value": "true"
+          },
+          "CLKOUT6_JITTER": {
+            "value": "183.467"
+          },
+          "CLKOUT6_PHASE_ERROR": {
+            "value": "105.461"
+          },
+          "CLKOUT6_REQUESTED_OUT_FREQ": {
+            "value": "100.000"
+          },
+          "CLKOUT6_REQUESTED_PHASE": {
+            "value": "0.000"
+          },
+          "CLKOUT6_USED": {
+            "value": "false"
+          },
+          "CLKOUT7_JITTER": {
+            "value": "183.467"
+          },
+          "CLKOUT7_PHASE_ERROR": {
+            "value": "105.461"
+          },
+          "CLKOUT7_REQUESTED_OUT_FREQ": {
+            "value": "100.000"
+          },
+          "CLKOUT7_REQUESTED_PHASE": {
+            "value": "0.000"
+          },
+          "CLKOUT7_USED": {
+            "value": "false"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "master_0"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "master_180"
+          },
+          "CLK_OUT3_PORT": {
+            "value": "encoder"
+          },
+          "CLK_OUT4_PORT": {
+            "value": "decoder"
+          },
+          "CLK_OUT5_PORT": {
+            "value": "master_fb"
+          },
+          "CLK_OUT6_PORT": {
+            "value": "clk_out6"
+          },
+          "CLK_OUT7_PORT": {
+            "value": "clk_out7"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "9.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "18.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "18"
+          },
+          "MMCM_CLKOUT1_PHASE": {
+            "value": "180.000"
+          },
+          "MMCM_CLKOUT2_DIVIDE": {
+            "value": "9"
+          },
+          "MMCM_CLKOUT3_DIVIDE": {
+            "value": "9"
+          },
+          "MMCM_CLKOUT3_PHASE": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT4_DIVIDE": {
+            "value": "18"
+          },
+          "MMCM_CLKOUT5_DIVIDE": {
+            "value": "1"
+          },
+          "MMCM_CLKOUT5_PHASE": {
+            "value": "0.000"
+          },
+          "MMCM_CLKOUT6_DIVIDE": {
+            "value": "1"
+          },
+          "MMCM_CLKOUT6_PHASE": {
+            "value": "0.000"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "5"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "100.000"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "decoder_top_v3_0": {
+        "vlnv": "xilinx.com:user:decoder_top_v3:3.0",
+        "xci_name": "encoder_decoder_sim_decoder_top_v3_0_0",
+        "xci_path": "ip\\encoder_decoder_sim_decoder_top_v3_0_0\\encoder_decoder_sim_decoder_top_v3_0_0.xci",
+        "inst_hier_path": "decoder_top_v3_0",
+        "parameters": {
+          "COMMS_DEBUG": {
+            "value": "true"
+          },
+          "SHIFT_IN_COMP": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "axi_vip_0_M_AXI": {
+        "interface_ports": [
+          "axi_vip_0/M_AXI",
+          "axi_spi_interface_0/S00_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "axi_spi_interface_0_axi_spi_cs_n": {
+        "ports": [
+          "axi_spi_interface_0/axi_spi_cs_n",
+          "decoder_top_v3_0/spi_cs_n"
+        ]
+      },
+      "axi_spi_interface_0_axi_spi_mosi": {
+        "ports": [
+          "axi_spi_interface_0/axi_spi_mosi",
+          "decoder_top_v3_0/spi_mosi"
+        ]
+      },
+      "axi_spi_interface_0_axi_spi_sclk": {
+        "ports": [
+          "axi_spi_interface_0/axi_spi_sclk",
+          "decoder_top_v3_0/spi_clk_ext"
+        ]
+      },
+      "axi_spi_interface_0_spi_slave_reset_n": {
+        "ports": [
+          "axi_spi_interface_0/spi_slave_reset_n",
+          "decoder_top_v3_0/reset_n"
+        ]
+      },
+      "clk_wiz_0_clk_out3": {
+        "ports": [
+          "clk_wiz_0/encoder",
+          "axi_spi_interface_0/s00_axi_aclk",
+          "axi_vip_0/aclk"
+        ]
+      },
+      "clk_wiz_0_decoder": {
+        "ports": [
+          "clk_wiz_0/decoder",
+          "decoder_top_v3_0/clk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "axi_spi_interface_0/gen_spi_clk_locked"
+        ]
+      },
+      "clk_wiz_0_master_0": {
+        "ports": [
+          "clk_wiz_0/master_0",
+          "axi_spi_interface_0/gen_spi_clk_0"
+        ]
+      },
+      "clk_wiz_0_master_180": {
+        "ports": [
+          "clk_wiz_0/master_180",
+          "axi_spi_interface_0/gen_spi_clk_180"
+        ]
+      },
+      "clk_wiz_0_master_fb": {
+        "ports": [
+          "clk_wiz_0/master_fb",
+          "axi_spi_interface_0/gen_spi_clk_fb_0"
+        ]
+      },
+      "decoder_top_v3_0_errors_corrected": {
+        "ports": [
+          "decoder_top_v3_0/errors_corrected",
+          "errors_corrected"
+        ]
+      },
+      "decoder_top_v3_0_spi_miso": {
+        "ports": [
+          "decoder_top_v3_0/spi_miso",
+          "axi_spi_interface_0/axi_spi_miso"
+        ]
+      },
+      "reset_n_1": {
+        "ports": [
+          "reset_n",
+          "axi_spi_interface_0/s00_axi_aresetn",
+          "axi_vip_0/aresetn",
+          "clk_wiz_0/resetn"
+        ]
+      },
+      "sys_clk_1": {
+        "ports": [
+          "sys_clk",
+          "clk_wiz_0/clk_in1"
+        ]
+      }
+    },
+    "addressing": {
+      "/axi_vip_0": {
+        "address_spaces": {
+          "Master_AXI": {
+            "segments": {
+              "SEG_axi_spi_interface_0_S00_AXI_reg": {
+                "address_block": "/axi_spi_interface_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x44A00000",
+                "range": "64K",
+                "offset_base_param": "C_S00_AXI_BASEADDR",
+                "offset_high_param": "C_S00_AXI_HIGHADDR"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

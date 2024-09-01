@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="encoder_system_auto_pc_0_synth_1" LaunchDir="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="encoder_system_axi_spi_interface_0_0_synth_1" LaunchDir="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_axi_spi_interface_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="encoder_system_processing_system7_0_0_synth_1" LaunchDir="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="encoder_system_rst_ps7_0_100M_0_synth_1" LaunchDir="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="encoder_system_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="encoder_system_auto_pc_0_synth_1"/>
+		<Parent Id="encoder_system_axi_spi_interface_0_0_synth_1"/>
+		<Parent Id="encoder_system_processing_system7_0_0_synth_1"/>
+		<Parent Id="encoder_system_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="encoder_system_clk_wiz_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

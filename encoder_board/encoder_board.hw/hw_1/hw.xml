@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2022.1 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z020_1" gui_info="dashboard1=hw_ila_1[xc7z020_1/hw_ila_1/Waveform=ILA_WAVE_1;xc7z020_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z020_1/hw_ila_1/Status=ILA_STATUS_1;xc7z020_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7z020_1/hw_ila_1/Settings=ILA_SETTINGS_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z020_1" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/encoder_system_wrapper.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/encoder_system_wrapper.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/encoder_system_wrapper.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count[5:0]" gui_info="Trigger Setup=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/miso_reg"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq40&apos;hXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq40&apos;hXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[39:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq40&apos;hXX_XXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[39]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[38]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[37]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[36]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[35]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[34]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[33]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[32]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[31]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[30]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[29]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[28]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[27]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[26]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[25]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[24]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[23]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[22]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[21]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[20]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[19]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[18]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[17]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[16]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[15]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[14]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[13]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[12]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[11]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[10]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[9]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[8]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[7]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[6]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[5]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[4]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[3]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[2]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[1]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[31]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[30]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[29]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[28]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[27]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[26]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[25]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[24]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[23]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[22]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[21]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[20]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[19]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[18]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[17]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[16]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[15]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[14]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[13]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[12]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[11]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[10]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[9]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[8]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[7]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[6]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[5]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[4]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[3]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[2]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[1]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[5:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_in_count[5]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_in_count[4]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_in_count[3]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_in_count[2]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_in_count[1]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_in_count[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq6&apos;u22"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[5:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq6&apos;u22"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count[5]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count[4]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count[3]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count[2]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count[1]"/>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/spi_clk_en"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

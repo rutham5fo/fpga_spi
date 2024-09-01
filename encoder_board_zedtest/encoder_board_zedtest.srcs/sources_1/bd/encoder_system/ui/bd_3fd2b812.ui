@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.702276",
+   "Default View_TopLeft":"-269,-135",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 1180 -y -90 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 1180 -y -60 -defaultsOSRD
+preplace port port-id_enc_sys_clk -pg 1 -lvl 0 -x -150 -y 230 -defaultsOSRD
+preplace port port-id_enc_clk_locked -pg 1 -lvl 3 -x 1180 -y 100 -defaultsOSRD
+preplace port port-id_enc_miso -pg 1 -lvl 0 -x -150 -y 260 -defaultsOSRD
+preplace port port-id_enc_mosi -pg 1 -lvl 3 -x 1180 -y 170 -defaultsOSRD
+preplace port port-id_enc_spi_sclk -pg 1 -lvl 3 -x 1180 -y 200 -defaultsOSRD
+preplace port port-id_enc_spi_cs_n -pg 1 -lvl 3 -x 1180 -y 230 -defaultsOSRD
+preplace port port-id_spi_slave_reset_n -pg 1 -lvl 3 -x 1180 -y 140 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 80 -y 0 -defaultsOSRD
+preplace inst axi_spi_interface_0 -pg 1 -lvl 2 -x 850 -y 130 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 80 -y 230 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 850 -y -190 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 80 -y -250 -defaultsOSRD
+preplace netloc axi_spi_interface_0_axi_spi_cs_n 1 2 1 1000 140n
+preplace netloc axi_spi_interface_0_axi_spi_mosi 1 2 1 1020 100n
+preplace netloc axi_spi_interface_0_axi_spi_sclk 1 2 1 1010 120n
+preplace netloc axi_spi_interface_0_spi_slave_reset_n 1 2 1 1030 140n
+preplace netloc clk_wiz_0_locked 1 1 2 290J 0 1030
+preplace netloc enc_miso_1 1 0 2 -120J 320 350
+preplace netloc enc_sys_clk_1 1 0 1 -130 230n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 -130 -350 300
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -120 140 280
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 1 310 -210n
+preplace netloc clk_wiz_0_data_out 1 1 1 330 100n
+preplace netloc clk_wiz_0_slave_clk 1 1 1 320 80n
+preplace netloc clk_wiz_0_data_in 1 1 1 340 120n
+preplace netloc processing_system7_0_DDR 1 1 2 290J -70 1030
+preplace netloc processing_system7_0_FIXED_IO 1 1 2 NJ -60 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 280J -250n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 2 340 -10 1020
+levelinfo -pg 1 -150 80 850 1180
+pagesize -pg 1 -db -bbox -sgen -270 -410 1340 360
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"2",
+   "da_ps7_cnt":"1"
+}

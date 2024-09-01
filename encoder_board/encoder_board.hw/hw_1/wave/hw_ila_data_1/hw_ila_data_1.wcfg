@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board/encoder_board.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="944"></ZoomStartTime>
+      <ZoomEndTime time="967"></ZoomEndTime>
+      <Cursor1Time time="979"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="578"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/p_0_in[39:0]</obj_property>
+      <obj_property name="ObjectShortName">p_0_in[39:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_in_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_in_count[5:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_in_count[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/shift_out_count[5:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_out_count[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/miso_reg" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/miso_reg</obj_property>
+      <obj_property name="ObjectShortName">miso_reg</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/spi_clk_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/spi_clk_en</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

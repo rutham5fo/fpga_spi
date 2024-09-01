@@ -1,0 +1,52 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_12 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axi_spi_tb_v3_behav xil_defaultlib.axi_spi_tb_v3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'status_address' [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board/encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/decoder_top.v:173]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'ctrl_reg_addr' [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board/encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/decoder_top.v:196]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'stat_reg_addr' [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board/encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/decoder_top.v:197]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'leds_reg_addr' [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board/encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/decoder_top.v:198]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 32 for port 'leds_out' [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board/encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/decoder_top.v:204]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'status_reg_mask' [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board/encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/decoder_top.v:249]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.$unit_axi_spi_tb_sv
+Compiling package xil_defaultlib.encoder_decoder_sim_axi_vip_0_0_...
+Compiling module xil_defaultlib.axi_spi_interface_v1_0_S00_AXI(S...
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.spi_driver(SPI_INIT_INTERVAL_VAL...
+Compiling module xil_defaultlib.axi_spi_interface_v1_0(SPI_INIT_...
+Compiling module xil_defaultlib.encoder_decoder_sim_axi_spi_inte...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=2,C_AX...
+Compiling module axi_vip_v1_1_12.axi_vip_v1_1_12_top(C_AXI_PROTOC...
+Compiling module xil_defaultlib.encoder_decoder_sim_axi_vip_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.0,C...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.encoder_decoder_sim_clk_wiz_0_0_...
+Compiling module xil_defaultlib.encoder_decoder_sim_clk_wiz_0_0
+Compiling module unisims_ver.BUFR(BUFR_DIVIDE="2")
+Compiling module unisims_ver.OBUFT
+Compiling module unisims_ver.IDDR(DDR_CLK_EDGE="SAME_EDGE_PIP...
+Compiling module xil_defaultlib.hamming
+Compiling module xil_defaultlib.reg_bank
+Compiling module unisims_ver.IDDR(SRTYPE="ASYNC")
+Compiling module unisims_ver.ODDR(SRTYPE="ASYNC")
+Compiling module xil_defaultlib.spi_slave(SHIFT_IN_COMP=1)
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.decoder_top(ERROR_COUNT_WIDTH=4,...
+Compiling module xil_defaultlib.encoder_decoder_sim_decoder_top_...
+Compiling module xil_defaultlib.encoder_decoder_sim
+Compiling module xil_defaultlib.encoder_decoder_sim_wrapper
+Compiling module xil_defaultlib.axi_spi_tb_v3
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot axi_spi_tb_v3_behav

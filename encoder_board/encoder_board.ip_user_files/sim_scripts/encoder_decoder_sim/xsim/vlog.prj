@@ -1,0 +1,22 @@
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/ec67/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/4e49" \
+"../../../bd/encoder_decoder_sim/ip/encoder_decoder_sim_axi_vip_0_0/sim/encoder_decoder_sim_axi_vip_0_0_pkg.sv" \
+"../../../bd/encoder_decoder_sim/ip/encoder_decoder_sim_axi_vip_0_0/sim/encoder_decoder_sim_axi_vip_0_0.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/ec67/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/4e49" \
+"../../../bd/encoder_decoder_sim/ip/encoder_decoder_sim_clk_wiz_0_0/encoder_decoder_sim_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/encoder_decoder_sim/ip/encoder_decoder_sim_clk_wiz_0_0/encoder_decoder_sim_clk_wiz_0_0.v" \
+"../../../bd/encoder_decoder_sim/ipshared/9b9a/hdl/axi_spi_interface_v1_0_S00_AXI.v" \
+"../../../bd/encoder_decoder_sim/ipshared/9b9a/src/spi_driver.v" \
+"../../../bd/encoder_decoder_sim/ipshared/9b9a/hdl/axi_spi_interface_v1_0.v" \
+"../../../bd/encoder_decoder_sim/ip/encoder_decoder_sim_axi_spi_interface_0_0/sim/encoder_decoder_sim_axi_spi_interface_0_0.v" \
+"../../../bd/encoder_decoder_sim/ipshared/d147/src/control.v" \
+"../../../bd/encoder_decoder_sim/ipshared/d147/src/hamming.v" \
+"../../../bd/encoder_decoder_sim/ipshared/d147/src/reg_bank.v" \
+"../../../bd/encoder_decoder_sim/ipshared/d147/src/spi_slave.v" \
+"../../../bd/encoder_decoder_sim/ipshared/d147/src/decoder_top.v" \
+"../../../bd/encoder_decoder_sim/ip/encoder_decoder_sim_decoder_top_v3_0_0/sim/encoder_decoder_sim_decoder_top_v3_0_0.v" \
+"../../../bd/encoder_decoder_sim/sim/encoder_decoder_sim.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: axi_spi_tb_v3.DUT.encoder_decoder_sim_i.axi_vip_0.inst
+time: 1750 ns | Read val = 00000000, from register           0
+time: 3140 ns | Read val = 80000000, from register           1
+time: 3160 ns | Read validation for register           1 failed | read_data = 80000000 ; valid_data = 00000032
+time: 4510 ns | Read val = 80000032, from register           0
+Executing Axi4 End Of Simulation checks
+$finish called at time : 4530 ns : File "C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_decoder_test_v3/encoder_decoder_test_v3.srcs/sim_1/new/axi_spi_tb_v3.sv" Line 254

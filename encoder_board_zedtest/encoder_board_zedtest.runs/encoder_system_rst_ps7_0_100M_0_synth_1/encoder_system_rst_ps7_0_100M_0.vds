@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Sep 26 13:21:38 2023
+# Process ID: 16216
+# Current directory: C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_rst_ps7_0_100M_0_synth_1
+# Command line: vivado.exe -log encoder_system_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source encoder_system_rst_ps7_0_100M_0.tcl
+# Log file: C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_rst_ps7_0_100M_0_synth_1/encoder_system_rst_ps7_0_100M_0.vds
+# Journal file: C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_rst_ps7_0_100M_0_synth_1\vivado.jou
+# Running On: LAPTOP-SRGHD2GT, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 7966 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/91988/AppData/Roaming/Xilinx/Vivado/2022.1/Vivado_init.tcl'
+source encoder_system_rst_ps7_0_100M_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1339.562 ; gain = 88.719
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.cache/ip 
+Command: synth_design -top encoder_system_rst_ps7_0_100M_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16596
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1339.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'encoder_system_rst_ps7_0_100M_0' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/synth/encoder_system_rst_ps7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/synth/encoder_system_rst_ps7_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:105982' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:105982]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:105982]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'encoder_system_rst_ps7_0_100M_0' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/synth/encoder_system_rst_ps7_0_100M_0.vhd:74]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 1339.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 1339.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 1339.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1339.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/encoder_system_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/encoder_system_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/encoder_system_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/encoder_system_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/encoder_system_rst_ps7_0_100M_0.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/encoder_system_rst_ps7_0_100M_0.xdc] for cell 'U0'
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 6 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-275] File does not exist [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.runs/encoder_system_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 26 13:22:36 2023...
