@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.632877",
+   "Default View_TopLeft":"-629,564",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 2 -x 870 -y 350 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 2 -x 870 -y 550 -defaultsOSRD
+preplace port port-id_axi_spi_cs_n -pg 1 -lvl 2 -x 870 -y 210 -defaultsOSRD
+preplace port port-id_axi_spi_miso -pg 1 -lvl 0 -x -20 -y 290 -defaultsOSRD
+preplace port port-id_axi_spi_mosi -pg 1 -lvl 2 -x 870 -y 150 -defaultsOSRD
+preplace port port-id_dec_reset_n -pg 1 -lvl 0 -x -20 -y 610 -defaultsOSRD
+preplace port port-id_dec_spi_cs_n -pg 1 -lvl 0 -x -20 -y 670 -defaultsOSRD
+preplace port port-id_dec_spi_miso -pg 1 -lvl 2 -x 870 -y 620 -defaultsOSRD
+preplace port port-id_dec_spi_mosi -pg 1 -lvl 0 -x -20 -y 700 -defaultsOSRD
+preplace port port-id_dec_sys_clk -pg 1 -lvl 0 -x -20 -y 520 -defaultsOSRD
+preplace port port-id_locked -pg 1 -lvl 2 -x 870 -y 320 -defaultsOSRD
+preplace port port-id_spi_slave_reset_n -pg 1 -lvl 2 -x 870 -y 240 -defaultsOSRD
+preplace port port-id_axi_spi_clk -pg 1 -lvl 2 -x 870 -y -290 -defaultsOSRD
+preplace portBus errors_corrected -pg 1 -lvl 2 -x 870 -y 680 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 330 -y -110 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 330 -y 720 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 1 -x 330 -y 510 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 330 -y 310 -defaultsOSRD
+preplace inst axi_spi_interface_0 -pg 1 -lvl 1 -x 330 -y 940 -defaultsOSRD
+preplace inst decoder_top_v3_0 -pg 1 -lvl 1 -x 330 -y 100 -defaultsOSRD
+preplace netloc axi_spi_interface_0_axi_spi_cs_n 1 1 1 620 210n
+preplace netloc axi_spi_interface_0_axi_spi_mosi 1 1 1 590 150n
+preplace netloc axi_spi_interface_0_axi_spi_sclk 1 1 1 580 -290n
+preplace netloc axi_spi_interface_0_spi_slave_reset_n 1 1 1 640 240n
+preplace netloc axi_spi_miso_1 1 0 1 20J 290n
+preplace netloc clk_wiz_1_clk_out1 1 0 2 100 -10 530
+preplace netloc clk_wiz_1_clk_out2 1 0 2 110 0 520
+preplace netloc clk_wiz_1_clk_out3 1 0 2 80 -220 550
+preplace netloc clk_wiz_1_clk_out4 1 0 2 50 -210 540
+preplace netloc clk_wiz_1_locked 1 0 2 80 200 630
+preplace netloc dec_reset_n_1 1 0 1 10J 60n
+preplace netloc dec_spi_cs_n_1 1 0 1 30J 120n
+preplace netloc dec_spi_mosi_1 1 0 1 40J 140n
+preplace netloc dec_sys_clk_1 1 0 1 0J -100n
+preplace netloc decoder_top_v3_0_errors_corrected 1 1 1 570 110n
+preplace netloc decoder_top_v3_0_spi_miso 1 1 1 610 90n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 60 1090 520
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 90 210 550
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 2 70 1100 560
+preplace netloc processing_system7_0_DDR 1 1 1 600J 350n
+preplace netloc processing_system7_0_FIXED_IO 1 1 1 630J 550n
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 2 90 1080 530
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 2 120 1070 540
+levelinfo -pg 1 -20 330 870
+pagesize -pg 1 -db -bbox -sgen -160 -420 1050 1130
+"
+}
+0

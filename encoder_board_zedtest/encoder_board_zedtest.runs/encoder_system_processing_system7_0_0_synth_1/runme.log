@@ -1,0 +1,50 @@
+
+*** Running vivado
+    with args -log encoder_system_processing_system7_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source encoder_system_processing_system7_0_0.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/91988/AppData/Roaming/Xilinx/Vivado/2022.1/Vivado_init.tcl'
+source encoder_system_processing_system7_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1367.777 ; gain = 620.297
+
+*** Running vivado
+    with args -log encoder_system_processing_system7_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source encoder_system_processing_system7_0_0.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/91988/AppData/Roaming/Xilinx/Vivado/2022.1/Vivado_init.tcl'
+source encoder_system_processing_system7_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1368.359 ; gain = 116.801
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.cache/ip 
+Command: synth_design -top encoder_system_processing_system7_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+ERROR: [Runs 36-287] File does not exist or is not accessible:'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_processing_system7_0_0/synth/encoder_system_processing_system7_0_0.v'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12428
+ERROR: [Synth 8-9264] cannot open verilog file 'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v'
+Failed to read verilog 'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board_zedtest/encoder_board_zedtest.gen/sources_1/bd/encoder_system/ip/encoder_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 26 13:22:29 2023...

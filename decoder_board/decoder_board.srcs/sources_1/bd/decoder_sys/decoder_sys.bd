@@ -1,0 +1,292 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x103FA3E6865E421D",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../decoder_board.gen/sources_1/bd/decoder_sys",
+      "name": "decoder_sys",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "decoder_top_v3_0": ""
+    },
+    "ports": {
+      "dec_sys_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "decoder_sys_dec_sys_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "dec_clk_locked": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dec_spi_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "decoder_sys_dec_spi_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "dec_spi_cs_n": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dec_mosi": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dec_miso": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "errors_corrected": {
+        "type": "data",
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dec_reset_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "dec_sys_resetn": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "decoder_sys_clk_wiz_0_0",
+        "xci_path": "ip\\decoder_sys_clk_wiz_0_0\\decoder_sys_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT2_JITTER": {
+            "value": "175.402"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "98.575"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "25.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "false"
+          },
+          "CLKOUT3_JITTER": {
+            "value": "175.402"
+          },
+          "CLKOUT3_PHASE_ERROR": {
+            "value": "98.575"
+          },
+          "CLKOUT3_REQUESTED_OUT_FREQ": {
+            "value": "25.000"
+          },
+          "CLKOUT3_REQUESTED_PHASE": {
+            "value": "180.000"
+          },
+          "CLKOUT3_USED": {
+            "value": "false"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "decoder"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "slave_0"
+          },
+          "CLK_OUT3_PORT": {
+            "value": "slave_180"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "1"
+          },
+          "MMCM_CLKOUT2_DIVIDE": {
+            "value": "1"
+          },
+          "MMCM_CLKOUT2_PHASE": {
+            "value": "180.000"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "1"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "100.000"
+          },
+          "RESET_PORT": {
+            "value": "reset"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "decoder_top_v3_0": {
+        "vlnv": "xilinx.com:user:decoder_top_v3:3.0",
+        "xci_name": "decoder_sys_decoder_top_v3_0_0",
+        "xci_path": "ip\\decoder_sys_decoder_top_v3_0_0\\decoder_sys_decoder_top_v3_0_0.xci",
+        "inst_hier_path": "decoder_top_v3_0",
+        "parameters": {
+          "COMMS_DEBUG": {
+            "value": "true"
+          },
+          "SHIFT_IN_COMP": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "dec_reset_n",
+          "decoder_top_v3_0/reset_n"
+        ]
+      },
+      "clk_wiz_0_decoder": {
+        "ports": [
+          "clk_wiz_0/decoder",
+          "decoder_top_v3_0/clk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "dec_clk_locked"
+        ]
+      },
+      "dec_mosi_1": {
+        "ports": [
+          "dec_mosi",
+          "decoder_top_v3_0/spi_mosi"
+        ]
+      },
+      "dec_spi_clk_1": {
+        "ports": [
+          "dec_spi_clk",
+          "decoder_top_v3_0/spi_clk_ext"
+        ]
+      },
+      "dec_spi_cs_n_1": {
+        "ports": [
+          "dec_spi_cs_n",
+          "decoder_top_v3_0/spi_cs_n"
+        ]
+      },
+      "dec_sys_clk_1": {
+        "ports": [
+          "dec_sys_clk",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "dec_sys_resetn_1": {
+        "ports": [
+          "dec_sys_resetn",
+          "clk_wiz_0/reset"
+        ]
+      },
+      "decoder_top_v3_0_errors_corrected": {
+        "ports": [
+          "decoder_top_v3_0/errors_corrected",
+          "errors_corrected"
+        ]
+      },
+      "decoder_top_v3_0_spi_miso": {
+        "ports": [
+          "decoder_top_v3_0/spi_miso",
+          "dec_miso"
+        ]
+      }
+    }
+  }
+}

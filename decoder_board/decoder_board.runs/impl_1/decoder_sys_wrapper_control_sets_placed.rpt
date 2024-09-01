@@ -1,0 +1,107 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:40:18 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file decoder_sys_wrapper_control_sets_placed.rpt
+| Design       : decoder_sys_wrapper
+| Device       : xc7z020
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    29 |
+|    Minimum number of control sets                        |    29 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    55 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    29 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    21 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            5 |
+| No           | No                    | Yes                    |               6 |            4 |
+| No           | Yes                   | No                     |              20 |            7 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             516 |          163 |
+| Yes          | Yes                   | No                     |             145 |           47 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
+|                      Clock Signal                     |                                 Enable Signal                                |                        Set/Reset Signal                        | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
+|  decoder_sys_i/decoder_top_v3_0/inst/spi_clk_buffered |                                                                              | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_write_en_fb |                1 |              1 |         1.00 |
+| ~decoder_sys_i/decoder_top_v3_0/inst/spi_clk_buffered |                                                                              | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_write_en_fb |                1 |              1 |         1.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 |                                                                              | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                2 |              4 |         2.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_reg[3]_0[0] | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                2 |              4 |         2.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/ham_inst/error_counter0                  | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                2 |              4 |         2.00 |
+| ~decoder_sys_i/clk_wiz_0/inst/decoder                 |                                                                              | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_write_en_fb |                2 |              4 |         2.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count0            | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_write_en_fb |                2 |              6 |         3.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 |                                                                              |                                                                |                5 |             10 |         2.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 |                                                                              | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_write_en_fb |                5 |             16 |         3.20 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_10[0]  | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               14 |             28 |         2.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[31]_i_1_n_0       | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               10 |             31 |         3.10 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_11[0]  | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                8 |             32 |         4.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_12[0]  | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                7 |             32 |         4.57 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_1[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               11 |             32 |         2.91 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_13[0]  | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               11 |             32 |         2.91 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_15[0]  | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                7 |             32 |         4.57 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_14[0]  | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               12 |             32 |         2.67 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_rd_en_reg_reg_0[0]        | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               19 |             32 |         1.68 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_2[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               19 |             32 |         1.68 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_3[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                9 |             32 |         3.56 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_4[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                6 |             32 |         5.33 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_9[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               11 |             32 |         2.91 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_8[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               10 |             32 |         3.20 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_7[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                5 |             32 |         6.40 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_5[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               12 |             32 |         2.67 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_6[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                8 |             32 |         4.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_buffer_reg0             | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_write_en_fb |                6 |             36 |         6.00 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/spi_interface/E[0]                       | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |                8 |             36 |         4.50 |
+|  decoder_sys_i/clk_wiz_0/inst/decoder                 | decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg_reg[3]_0[0]   | decoder_sys_i/decoder_top_v3_0/inst/bank_1/reset_n_iddr        |               11 |             36 |         3.27 |
++-------------------------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
+
+

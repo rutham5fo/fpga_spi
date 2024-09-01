@@ -1,0 +1,24 @@
+
+*** Running vivado
+    with args -log decoder_sys_pll_decoder_top_v3_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder_sys_pll_decoder_top_v3_0_0.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/91988/AppData/Roaming/Xilinx/Vivado/2022.1/Vivado_init.tcl'
+source decoder_sys_pll_decoder_top_v3_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1335.871 ; gain = 84.020
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.cache/ip 
+Command: synth_design -top decoder_sys_pll_decoder_top_v3_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1

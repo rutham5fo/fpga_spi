@@ -1,0 +1,43 @@
+Nothing to build in platform 'encoder_board_zedtest'
+
+09:11:38 **** Incremental Build of configuration Debug for project encoder_board_zedtest_app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/Vitis_2/encoder_board_zedtest/export/encoder_board_zedtest/sw/encoder_board_zedtest/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:200:13: warning: unused variable 'dec_data' [-Wunused-variable]
+  200 |         u32 dec_data[MAX_DATA] = {0};                                                   // Decoded data read from decoder will be stored here
+      |             ^~~~~~~~
+../src/main.c:199:13: warning: unused variable 'enc_data_fliped' [-Wunused-variable]
+  199 |         u32 enc_data_fliped[] = {7, 179, 124, 117};                             // Flipped values are 1 (3), 2 (7), 3 (6), 4 (5) ; where number inside the () indicate the flipped bit
+      |             ^~~~~~~~~~~~~~~
+../src/main.c:198:13: warning: unused variable 'enc_data_clean' [-Wunused-variable]
+  198 |         u32 enc_data_clean[] = {15, 51, 60, 85};                                // Clean Encoded values corresponding to valid data
+      |             ^~~~~~~~~~~~~~
+../src/main.c:197:13: warning: unused variable 'valid_data' [-Wunused-variable]
+  197 |         u32 valid_data[] = {1, 1, 2, 2, 3, 3, 4, 4};
+      |             ^~~~~~~~~~
+../src/main.c:196:12: warning: unused variable 'fb_delay' [-Wunused-variable]
+  196 |         s8 fb_delay = 0;
+      |            ^~~~~~~~
+../src/main.c:194:12: warning: unused variable 'i' [-Wunused-variable]
+  194 |         u8 i;
+      |            ^
+'Finished building: ../src/main.c'
+' '
+'Building target: encoder_board_zedtest_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/Vitis_2/encoder_board_zedtest/export/encoder_board_zedtest/sw/encoder_board_zedtest/standalone_domain/bsplib/lib -o "encoder_board_zedtest_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: encoder_board_zedtest_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size encoder_board_zedtest_app.elf  |tee "encoder_board_zedtest_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24293	   1144	  22584	  48021	   bb95	encoder_board_zedtest_app.elf
+'Finished building: encoder_board_zedtest_app.elf.size'
+' '

@@ -1,0 +1,395 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Jul 17 13:37:31 2023
+# Process ID: 48392
+# Current directory: C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1
+# Command line: vivado.exe -log decoder_sys_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder_sys_wrapper.tcl
+# Log file: C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1/decoder_sys_wrapper.vds
+# Journal file: C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1\vivado.jou
+# Running On: LAPTOP-SRGHD2GT, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 7966 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/91988/AppData/Roaming/Xilinx/Vivado/2022.1/Vivado_init.tcl'
+source decoder_sys_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/utils_1/imports/synth_1/decoder_sys_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/utils_1/imports/synth_1/decoder_sys_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top decoder_sys_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 49600
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1308.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'decoder_sys_wrapper' [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/hdl/decoder_sys_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'decoder_sys' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/synth/decoder_sys.v:12]
+INFO: [Synth 8-6157] synthesizing module 'decoder_sys_clk_wiz_0_0' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'decoder_sys_clk_wiz_0_0_clk_wiz' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:55203]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:55203]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:63509]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:63509]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_sys_clk_wiz_0_0_clk_wiz' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_sys_clk_wiz_0_0' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'decoder_sys_decoder_top_v3_0_0' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/synth/decoder_sys_decoder_top_v3_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'decoder_top' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/decoder_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1409]
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1409]
+INFO: [Synth 8-6157] synthesizing module 'OBUFT' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:71571]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFT' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:71571]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'hamming' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/hamming.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hamming' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/hamming.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/reg_bank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/reg_bank.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'leds_out' does not match port width (32) of module 'reg_bank' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/decoder_top.v:204]
+INFO: [Synth 8-6157] synthesizing module 'spi_slave' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/spi_slave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDDR__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6155] done synthesizing module 'IDDR__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'spi_slave' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/spi_slave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_top' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ipshared/b32e/src/decoder_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_sys_decoder_top_v3_0_0' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/synth/decoder_sys_decoder_top_v3_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_sys' (0#1) [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/synth/decoder_sys.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_sys_wrapper' (0#1) [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/hdl/decoder_sys_wrapper.v:12]
+WARNING: [Synth 8-7129] Port ctrl_reg[31] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[30] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[29] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[28] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[27] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[26] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[25] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[24] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[23] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[22] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[21] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[20] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[19] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[18] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[17] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[16] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[15] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[14] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[13] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[12] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[11] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[10] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[9] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl_reg[8] in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[31] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[30] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[29] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[28] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[27] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[26] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[25] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[24] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[23] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[22] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[21] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[20] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[19] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[18] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[17] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[16] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[15] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[14] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[13] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[12] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[11] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[10] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[9] in module hamming is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[8] in module hamming is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1308.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1308.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1308.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1308.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0_board.xdc] for cell 'decoder_sys_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0_board.xdc] for cell 'decoder_sys_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0.xdc] for cell 'decoder_sys_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0.xdc] for cell 'decoder_sys_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_clk_wiz_0_0/decoder_sys_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decoder_sys_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decoder_sys_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/timing.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/timing.xdc:12]
+WARNING: [Vivado 12-2489] -delay contains time 20.113500 which will be rounded to 20.114 to ensure it is an integer multiple of 1 picosecond [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/timing.xdc:45]
+WARNING: [Vivado 12-2489] -delay contains time 19.886500 which will be rounded to 19.887 to ensure it is an integer multiple of 1 picosecond [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/timing.xdc:46]
+Finished Parsing XDC File [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/timing.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decoder_sys_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decoder_sys_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decoder_sys_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decoder_sys_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decoder_sys_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decoder_sys_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc] for cell 'decoder_sys_i/decoder_top_v3_0/inst'
+Finished Parsing XDC File [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc] for cell 'decoder_sys_i/decoder_top_v3_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decoder_sys_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decoder_sys_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1346.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1346.840 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1346.840 ; gain = 37.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1346.840 ; gain = 37.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for decoder_sys_i/clk_wiz_0/inst. (constraint file  C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1/dont_touch.xdc, line 18).
+Applied set_property KEEP_HIERARCHY = SOFT for decoder_sys_i/decoder_top_v3_0/inst. (constraint file  C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1/dont_touch.xdc, line 26).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_nn_data_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_nn_data_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_np_data_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_np_data_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_np_valid_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_np_valid_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_pn_data_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_pn_data_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_pp_data_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_pp_data_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_pp_valid_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property ASYNC_REG = true for decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_pp_valid_metaguard_reg. (constraint file  c:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.gen/sources_1/bd/decoder_sys/ip/decoder_sys_decoder_top_v3_0_0/src/timing.xdc, line 13).
+Applied set_property KEEP_HIERARCHY = SOFT for decoder_sys_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for decoder_sys_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for decoder_sys_i/decoder_top_v3_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1346.840 ; gain = 37.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1346.840 ; gain = 37.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 5     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 19    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   3 Input   28 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 14    
+	   5 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:56 . Memory (MB): peak = 1346.840 ; gain = 37.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:01:03 . Memory (MB): peak = 1346.840 ; gain = 37.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:28 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:29 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin reset_n_metaguard_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin reset_n_metaguard_inferred:in0[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:34 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:34 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:01:34 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:01:34 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:34 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:01:34 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |BUFR       |     2|
+|3     |IDDR       |     3|
+|5     |LUT1       |    10|
+|6     |LUT2       |    11|
+|7     |LUT3       |     7|
+|8     |LUT4       |    37|
+|9     |LUT5       |    64|
+|10    |LUT6       |   174|
+|11    |MMCME2_ADV |     1|
+|12    |MUXF7      |    48|
+|13    |MUXF8      |     6|
+|14    |ODDR       |     1|
+|15    |FDCE       |   518|
+|16    |FDRE       |   171|
+|17    |FDR        |     4|
+|18    |IBUF       |     6|
+|19    |OBUF       |     5|
+|20    |OBUFT      |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:01:34 . Memory (MB): peak = 1365.191 ; gain = 56.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:30 . Memory (MB): peak = 1365.191 ; gain = 18.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:01:34 . Memory (MB): peak = 1365.191 ; gain = 56.328
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1365.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1372.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  FDR_1 => FDRE (inverted pins: C): 4 instances
+
+Synth Design complete, checksum: f161434d
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:41 . Memory (MB): peak = 1372.145 ; gain = 63.281
+INFO: [Common 17-1381] The checkpoint 'C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/decoder_board/decoder_board.runs/synth_1/decoder_sys_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file decoder_sys_wrapper_utilization_synth.rpt -pb decoder_sys_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 17 13:39:22 2023...

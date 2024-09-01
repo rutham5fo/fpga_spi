@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: axi_spi_tb_v3.DUT.encoder_decoder_sim_i.axi_vip_0.inst
+ERROR: 400 ns axi_spi_tb_v3.DUT.encoder_decoder_sim_i.axi_vip_0.inst.IF  : XILINX_RESET_PULSE_WIDTH: Holding AXI ARESETN asserted for 16 cycles of the slowest AXI clock is generally a sufficient reset pulse width for Xilinx IP. --UG1037. To downgrade, use <hierarchy_path to VIP>.IF.set_xilinx_reset_check_to_warn(), or filter using clr_xilinx_reset_check().
+time: 2070 ns | Read val = 00000000, from register           0
+time: 3460 ns | Read val = 00000000, from register           1
+time: 3480 ns | Read validation for register           1 failed | read_data = 00000000 ; valid_data = 00000032
+time: 4830 ns | Read val = 85a5a5a5, from register           0
+time: 6200 ns | Read val = 8c3c3c3c, from register           0
+Executing Axi4 End Of Simulation checks
+$finish called at time : 6220 ns : File "C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/encoder_board/encoder_board.srcs/sim_1/new/axi_spi_tb.sv" Line 255

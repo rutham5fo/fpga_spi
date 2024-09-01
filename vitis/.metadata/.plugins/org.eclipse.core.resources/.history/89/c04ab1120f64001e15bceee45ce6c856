@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="encoder_board_zedtest_app" location="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/Vitis_2/encoder_board_zedtest_app" platform="C:/Users/91988/Documents/Amruth/Files/EAS/hls_accel/Vitis_2/encoder_board_zedtest/export/encoder_board_zedtest/encoder_board_zedtest.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="encoder_board_zedtest_app_system" sysConfig="encoder_board_zedtest" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="b076dc2428bd14f2260621ff1d7edb49">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.690593005">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.56463722" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

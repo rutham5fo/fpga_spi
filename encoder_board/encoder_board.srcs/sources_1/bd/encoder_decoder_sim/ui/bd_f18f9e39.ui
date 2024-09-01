@@ -1,0 +1,34 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.18653",
+   "Default View_TopLeft":"-204,-251",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_reset_n -pg 1 -lvl 0 -x -110 -y -120 -defaultsOSRD
+preplace port port-id_sys_clk -pg 1 -lvl 0 -x -110 -y -150 -defaultsOSRD
+preplace portBus errors_corrected -pg 1 -lvl 4 -x 1360 -y -220 -defaultsOSRD
+preplace inst axi_spi_interface_0 -pg 1 -lvl 2 -x 820 -y 100 -defaultsOSRD
+preplace inst axi_vip_0 -pg 1 -lvl 1 -x 320 -y 100 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 320 -y -140 -defaultsOSRD
+preplace inst decoder_top_v3_0 -pg 1 -lvl 3 -x 1170 -y 100 -defaultsOSRD
+preplace netloc axi_spi_interface_0_axi_spi_cs_n 1 2 1 970 110n
+preplace netloc axi_spi_interface_0_axi_spi_mosi 1 2 1 980 70n
+preplace netloc axi_spi_interface_0_axi_spi_sclk 1 2 1 990 90n
+preplace netloc axi_spi_interface_0_spi_slave_reset_n 1 2 1 1000 60n
+preplace netloc clk_wiz_0_clk_out3 1 0 2 -70 30 430
+preplace netloc clk_wiz_0_decoder 1 1 2 NJ -130 1010
+preplace netloc clk_wiz_0_locked 1 1 1 420 -90n
+preplace netloc clk_wiz_0_master_0 1 1 1 470 -190n
+preplace netloc clk_wiz_0_master_180 1 1 1 460 -170n
+preplace netloc clk_wiz_0_master_fb 1 1 1 440 -110n
+preplace netloc decoder_top_v3_0_errors_corrected 1 3 1 1310 -220n
+preplace netloc decoder_top_v3_0_spi_miso 1 1 3 460 230 NJ 230 1300
+preplace netloc reset_n_1 1 0 2 -80 170 N
+preplace netloc sys_clk_1 1 0 1 -90 -150n
+preplace netloc axi_vip_0_M_AXI 1 1 1 450 30n
+levelinfo -pg 1 -110 320 820 1170 1360
+pagesize -pg 1 -db -bbox -sgen -210 -410 1540 410
+"
+}
+0

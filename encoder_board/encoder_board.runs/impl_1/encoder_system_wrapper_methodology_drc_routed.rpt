@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 14:02:12 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : report_methodology -file encoder_system_wrapper_methodology_drc_routed.rpt -pb encoder_system_wrapper_methodology_drc_routed.pb -rpx encoder_system_wrapper_methodology_drc_routed.rpx
+| Design       : encoder_system_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++-----------+----------+-------------------------------------------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                                                           | Violations |
++-----------+----------+-------------------------------------------------------------------------------------------------------+------------+
+| TIMING-9  | Warning  | Unknown CDC Logic                                                                                     | 1          |
+| TIMING-11 | Warning  | Inappropriate max delay with datapath only option                                                     | 1          |
+| TIMING-47 | Warning  | False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks | 1          |
++-----------+----------+-------------------------------------------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-11#1 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/spi_clk_en_reg_reg/C and encoder_system_i/axi_spi_interface_0/inst/spi_driver_i/ODDR_inst/CE. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-47#1 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A Max Delay Datapath Only timing constraint is set between synchronous clocks clk_out2_encoder_system_clk_wiz_0_0 and clk_out3_encoder_system_clk_wiz_0_0 (see constraint position 20 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+

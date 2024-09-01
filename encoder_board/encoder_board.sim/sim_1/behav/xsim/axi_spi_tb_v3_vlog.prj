@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/4e49" --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/ec67/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/5765/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/ec67/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/4e49" --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ip/encoder_decoder_sim_axi_vip_0_0/sim/encoder_decoder_sim_axi_vip_0_0_pkg.sv" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ip/encoder_decoder_sim_axi_vip_0_0/sim/encoder_decoder_sim_axi_vip_0_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/4e49" --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/ec67/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/5765/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/ec67/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/4e49" --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ip/encoder_decoder_sim_clk_wiz_0_0/encoder_decoder_sim_clk_wiz_0_0_clk_wiz.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ip/encoder_decoder_sim_clk_wiz_0_0/encoder_decoder_sim_clk_wiz_0_0.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/e0d0/hdl/axi_spi_interface_v1_0_S00_AXI.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/e0d0/src/spi_driver.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/e0d0/hdl/axi_spi_interface_v1_0.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ip/encoder_decoder_sim_axi_spi_interface_0_0/sim/encoder_decoder_sim_axi_spi_interface_0_0.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/control.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/hamming.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/reg_bank.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/spi_slave.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ipshared/b32e/src/decoder_top.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/ip/encoder_decoder_sim_decoder_top_v3_0_0/sim/encoder_decoder_sim_decoder_top_v3_0_0.v" \
+"../../../../encoder_board.ip_user_files/bd/encoder_decoder_sim/sim/encoder_decoder_sim.v" \
+"../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/hdl/encoder_decoder_sim_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/4e49" --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/ec67/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_system/ipshared/5765/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/ec67/hdl" --include "../../../../encoder_board.gen/sources_1/bd/encoder_decoder_sim/ipshared/4e49" --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../encoder_board.srcs/sim_1/new/axi_spi_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

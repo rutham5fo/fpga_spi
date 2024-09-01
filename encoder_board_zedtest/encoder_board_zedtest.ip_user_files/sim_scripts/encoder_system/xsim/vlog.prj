@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/ec67/hdl" --include "../../../../encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/5765/hdl" --include "../../../../encoder_board_zedtest.gen/sources_1/bd/encoder_system/ipshared/4e49" \
+"../../../bd/encoder_system/ip/encoder_system_processing_system7_0_0/sim/encoder_system_processing_system7_0_0.v" \
+"../../../bd/encoder_system/ipshared/e0d0/hdl/axi_spi_interface_v1_0_S00_AXI.v" \
+"../../../bd/encoder_system/ipshared/e0d0/src/spi_driver.v" \
+"../../../bd/encoder_system/ipshared/e0d0/hdl/axi_spi_interface_v1_0.v" \
+"../../../bd/encoder_system/ip/encoder_system_axi_spi_interface_0_0/sim/encoder_system_axi_spi_interface_0_0.v" \
+"../../../bd/encoder_system/ip/encoder_system_clk_wiz_0_0/encoder_system_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/encoder_system/ip/encoder_system_clk_wiz_0_0/encoder_system_clk_wiz_0_0.v" \
+"../../../bd/encoder_system/sim/encoder_system.v" \
+"../../../bd/encoder_system/ip/encoder_system_auto_pc_0/sim/encoder_system_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

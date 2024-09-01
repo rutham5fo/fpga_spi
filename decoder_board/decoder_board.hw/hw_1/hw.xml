@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2022.1 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z020_1" gui_info="dashboard1=dashboard_1[xc7z020_1/hw_ila_1/Waveform=ILA_WAVE_1;xc7z020_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z020_1/hw_ila_1/Status=ILA_STATUS_1;xc7z020_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7z020_1/hw_ila_1/Settings=ILA_SETTINGS_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z020_1" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value=""/>
+      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/decoder_sys_pll_wrapper.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.CAPTURE_MODE" value="BASIC"/>
+      <Properties Property="CONTROL.DATA_DEPTH" value="256"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="32"/>
+      <Properties Property="CONTROL.WINDOW_COUNT" value="4"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="decoder_sys_i/decoder_top_v3_0/inst/spi_cs_n_buffered" gui_info="Trigger Setup=0"/>
+    <Object name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[31:0]" gui_info=""/>
+    <Object name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_mosi_reg_sel_debug[1:0]" gui_info=""/>
+    <Object name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug[5:0]" gui_info=""/>
+    <Object name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/new_bit_avail" gui_info=""/>
+    <Object name="decoder_sys_i/decoder_top_v3_0/inst/spi_write_en_stable" gui_info=""/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe15[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/controller/spi_wr_addr_reg"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe9[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[31]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[30]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[29]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[28]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[27]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[26]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[25]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[24]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[23]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[22]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[21]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[20]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[19]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[18]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[17]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[16]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[15]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[14]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[13]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[12]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[11]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[10]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[9]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[8]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[7]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[6]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[5]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[4]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/miso_reg_debug[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bF"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe11[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bF"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_cs_n_buffered"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[31]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[30]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[29]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[28]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[27]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[26]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[25]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[24]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[23]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[22]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[21]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[20]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[19]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[18]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[17]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[16]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[15]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[14]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[13]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[12]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[11]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[10]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[9]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[8]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[7]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[6]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[5]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[4]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_data_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/distru_n"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/distru_p"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[31]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[30]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[29]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[28]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[27]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[26]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[25]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[24]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[23]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[22]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[21]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[20]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[19]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[18]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[17]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[16]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[15]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[14]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[13]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[12]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[11]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[10]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[9]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[8]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[7]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[6]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[5]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[4]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/driver_out_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq2&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[1:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_mosi_reg_sel[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_mosi_reg_sel[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq2&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[1:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_mosi_reg_sel_debug[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_mosi_reg_sel_debug[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[5:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug[5]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug[4]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/in_shift_count_debug[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe8[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/merger_out"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe9[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/merger_out_valid"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[31]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[30]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[29]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[28]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[27]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[26]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[25]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[24]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[23]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[22]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[21]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[20]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[19]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[18]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[17]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[16]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[15]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[14]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[13]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[12]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[11]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[10]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[9]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[8]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[7]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[6]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[5]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[4]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/miso_reg[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_reg_debug[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_reg_debug[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_reg_debug[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_reg_debug[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe10[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_to_in_buff"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_valid_debug[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_valid_debug[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_valid_debug[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/mosi_valid_debug[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe11[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/new_bit_avail"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[5:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/out_shft_cnt[5]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/out_shft_cnt[4]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/out_shft_cnt[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/out_shft_cnt[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/out_shft_cnt[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/out_shft_cnt[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/prev_mosi_valid_debug[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/prev_mosi_valid_debug[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/prev_mosi_valid_debug[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/prev_mosi_valid_debug[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe10[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_clk_iob"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe14[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_in_reg"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe13[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_mosi"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe12[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_n_data"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe13[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_p_data"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_wr_addr[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_wr_addr[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_wr_addr[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_interface/spi_wr_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe14[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_read_en_stable"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_wr_addr[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_wr_addr[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_wr_addr[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_wr_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe8[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_wr_addr_trunc[3]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_wr_addr_trunc[2]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_wr_addr_trunc[1]"/>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_wr_addr_trunc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe15[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="decoder_sys_i/decoder_top_v3_0/inst/spi_write_en_stable"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

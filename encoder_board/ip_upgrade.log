@@ -1,0 +1,4689 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:59 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_rst_ps7_0_100M_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_system_rst_ps7_0_100M_1 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:59 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_ps7_0_axi_periph_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_system_ps7_0_axi_periph_1 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 27)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:59 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_processing_system7_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_system_processing_system7_0_2 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:59 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_clk_wiz_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of encoder_system_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 10)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'CLKOUT4_REQUESTED_OUT_FREQ' from '100.000' to '25.000' has been ignored for IP 'encoder_system_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'CLKOUT4_REQUESTED_PHASE' from '0.000' to '270.000' has been ignored for IP 'encoder_system_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT3_PHASE' from '0.000' to '270.000' has been ignored for IP 'encoder_system_clk_wiz_0_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:clk_wiz:6.0 -user_name encoder_system_clk_wiz_0_0
+set_property -dict "\
+  CONFIG.AUTO_PRIMITIVE {MMCM} \
+  CONFIG.AXI_DRP {false} \
+  CONFIG.CALC_DONE {empty} \
+  CONFIG.CDDCDONE_PORT {cddcdone} \
+  CONFIG.CDDCREQ_PORT {cddcreq} \
+  CONFIG.CLKFB_IN_N_PORT {clkfb_in_n} \
+  CONFIG.CLKFB_IN_PORT {clkfb_in} \
+  CONFIG.CLKFB_IN_P_PORT {clkfb_in_p} \
+  CONFIG.CLKFB_IN_SIGNALING {SINGLE} \
+  CONFIG.CLKFB_OUT_N_PORT {clkfb_out_n} \
+  CONFIG.CLKFB_OUT_PORT {clkfb_out} \
+  CONFIG.CLKFB_OUT_P_PORT {clkfb_out_p} \
+  CONFIG.CLKFB_STOPPED_PORT {clkfb_stopped} \
+  CONFIG.CLKIN1_JITTER_PS {80.0} \
+  CONFIG.CLKIN1_UI_JITTER {0.010} \
+  CONFIG.CLKIN2_JITTER_PS {100.0} \
+  CONFIG.CLKIN2_UI_JITTER {0.010} \
+  CONFIG.CLKOUT1_DRIVES {BUFG} \
+  CONFIG.CLKOUT1_JITTER {229.608} \
+  CONFIG.CLKOUT1_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT1_PHASE_ERROR {233.292} \
+  CONFIG.CLKOUT1_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.000} \
+  CONFIG.CLKOUT1_REQUESTED_PHASE {240} \
+  CONFIG.CLKOUT1_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT1_USED {true} \
+  CONFIG.CLKOUT2_DRIVES {BUFG} \
+  CONFIG.CLKOUT2_JITTER {229.608} \
+  CONFIG.CLKOUT2_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT2_PHASE_ERROR {233.292} \
+  CONFIG.CLKOUT2_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50.000} \
+  CONFIG.CLKOUT2_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT2_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.CLKOUT3_DRIVES {BUFG} \
+  CONFIG.CLKOUT3_JITTER {229.608} \
+  CONFIG.CLKOUT3_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT3_PHASE_ERROR {233.292} \
+  CONFIG.CLKOUT3_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {50.000} \
+  CONFIG.CLKOUT3_REQUESTED_PHASE {270} \
+  CONFIG.CLKOUT3_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT3_USED {true} \
+  CONFIG.CLKOUT4_DRIVES {BUFG} \
+  CONFIG.CLKOUT4_JITTER {300.505} \
+  CONFIG.CLKOUT4_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT4_PHASE_ERROR {242.819} \
+  CONFIG.CLKOUT4_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {25.000} \
+  CONFIG.CLKOUT4_REQUESTED_PHASE {270.000} \
+  CONFIG.CLKOUT4_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT4_USED {false} \
+  CONFIG.CLKOUT5_DRIVES {BUFG} \
+  CONFIG.CLKOUT5_JITTER {124.615} \
+  CONFIG.CLKOUT5_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT5_PHASE_ERROR {96.948} \
+  CONFIG.CLKOUT5_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT5_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT5_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT5_USED {false} \
+  CONFIG.CLKOUT6_DRIVES {BUFG} \
+  CONFIG.CLKOUT6_JITTER {0.0} \
+  CONFIG.CLKOUT6_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT6_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT6_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT6_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT6_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT6_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT6_USED {false} \
+  CONFIG.CLKOUT7_DRIVES {BUFG} \
+  CONFIG.CLKOUT7_JITTER {0.0} \
+  CONFIG.CLKOUT7_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT7_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT7_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT7_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT7_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT7_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT7_USED {false} \
+  CONFIG.CLKOUTPHY_REQUESTED_FREQ {600.000} \
+  CONFIG.CLK_IN1_BOARD_INTERFACE {Custom} \
+  CONFIG.CLK_IN2_BOARD_INTERFACE {Custom} \
+  CONFIG.CLK_IN_SEL_PORT {clk_in_sel} \
+  CONFIG.CLK_OUT1_PORT {clk_out1} \
+  CONFIG.CLK_OUT1_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT2_PORT {clk_out2} \
+  CONFIG.CLK_OUT2_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT3_PORT {clk_out3} \
+  CONFIG.CLK_OUT3_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT4_PORT {clk_out4} \
+  CONFIG.CLK_OUT4_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT5_PORT {clk_out5} \
+  CONFIG.CLK_OUT5_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT6_PORT {clk_out6} \
+  CONFIG.CLK_OUT6_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT7_PORT {clk_out7} \
+  CONFIG.CLK_OUT7_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_VALID_PORT {CLK_VALID} \
+  CONFIG.CLOCK_MGR_TYPE {auto} \
+  CONFIG.Component_Name {encoder_system_clk_wiz_0_0} \
+  CONFIG.DADDR_PORT {daddr} \
+  CONFIG.DCLK_PORT {dclk} \
+  CONFIG.DEN_PORT {den} \
+  CONFIG.DIFF_CLK_IN1_BOARD_INTERFACE {Custom} \
+  CONFIG.DIFF_CLK_IN2_BOARD_INTERFACE {Custom} \
+  CONFIG.DIN_PORT {din} \
+  CONFIG.DOUT_PORT {dout} \
+  CONFIG.DRDY_PORT {drdy} \
+  CONFIG.DWE_PORT {dwe} \
+  CONFIG.ENABLE_CDDC {false} \
+  CONFIG.ENABLE_CLKOUTPHY {false} \
+  CONFIG.ENABLE_CLOCK_MONITOR {false} \
+  CONFIG.ENABLE_USER_CLOCK0 {false} \
+  CONFIG.ENABLE_USER_CLOCK1 {false} \
+  CONFIG.ENABLE_USER_CLOCK2 {false} \
+  CONFIG.ENABLE_USER_CLOCK3 {false} \
+  CONFIG.Enable_PLL0 {false} \
+  CONFIG.Enable_PLL1 {false} \
+  CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} \
+  CONFIG.INPUT_CLK_STOPPED_PORT {input_clk_stopped} \
+  CONFIG.INPUT_MODE {frequency} \
+  CONFIG.INTERFACE_SELECTION {Enable_AXI} \
+  CONFIG.IN_FREQ_UNITS {Units_MHz} \
+  CONFIG.IN_JITTER_UNITS {Units_UI} \
+  CONFIG.JITTER_OPTIONS {UI} \
+  CONFIG.JITTER_SEL {No_Jitter} \
+  CONFIG.LOCKED_PORT {locked} \
+  CONFIG.MMCM_BANDWIDTH {OPTIMIZED} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {42.000} \
+  CONFIG.MMCM_CLKFBOUT_PHASE {0.000} \
+  CONFIG.MMCM_CLKFBOUT_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKIN1_PERIOD {8.000} \
+  CONFIG.MMCM_CLKIN2_PERIOD {10.000} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {21.000} \
+  CONFIG.MMCM_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT0_PHASE {240.000} \
+  CONFIG.MMCM_CLKOUT0_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {21} \
+  CONFIG.MMCM_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT1_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT1_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT2_DIVIDE {21} \
+  CONFIG.MMCM_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT2_PHASE {270.000} \
+  CONFIG.MMCM_CLKOUT2_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT3_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT3_PHASE {270.000} \
+  CONFIG.MMCM_CLKOUT3_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT4_CASCADE {false} \
+  CONFIG.MMCM_CLKOUT4_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT4_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT4_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT5_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT5_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT5_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT6_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT6_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT6_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT6_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLOCK_HOLD {false} \
+  CONFIG.MMCM_COMPENSATION {ZHOLD} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {5} \
+  CONFIG.MMCM_NOTES {None} \
+  CONFIG.MMCM_REF_JITTER1 {0.010} \
+  CONFIG.MMCM_REF_JITTER2 {0.010} \
+  CONFIG.MMCM_STARTUP_WAIT {false} \
+  CONFIG.NUM_OUT_CLKS {3} \
+  CONFIG.OPTIMIZE_CLOCKING_STRUCTURE_EN {false} \
+  CONFIG.OVERRIDE_MMCM {false} \
+  CONFIG.OVERRIDE_PLL {false} \
+  CONFIG.PHASESHIFT_MODE {WAVEFORM} \
+  CONFIG.PHASE_DUTY_CONFIG {false} \
+  CONFIG.PLATFORM {UNKNOWN} \
+  CONFIG.PLL_BANDWIDTH {OPTIMIZED} \
+  CONFIG.PLL_CLKFBOUT_MULT {4} \
+  CONFIG.PLL_CLKFBOUT_PHASE {0.000} \
+  CONFIG.PLL_CLKIN_PERIOD {10.000} \
+  CONFIG.PLL_CLKOUT0_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT0_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT1_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT1_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT2_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT2_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT3_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT3_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT4_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT4_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT5_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT5_PHASE {0.000} \
+  CONFIG.PLL_CLK_FEEDBACK {CLKFBOUT} \
+  CONFIG.PLL_COMPENSATION {SYSTEM_SYNCHRONOUS} \
+  CONFIG.PLL_DIVCLK_DIVIDE {1} \
+  CONFIG.PLL_NOTES {None} \
+  CONFIG.PLL_REF_JITTER {0.010} \
+  CONFIG.POWER_DOWN_PORT {power_down} \
+  CONFIG.PRECISION {1} \
+  CONFIG.PRIMARY_PORT {clk_in1} \
+  CONFIG.PRIMITIVE {MMCM} \
+  CONFIG.PRIMTYPE_SEL {mmcm_adv} \
+  CONFIG.PRIM_IN_FREQ {125.000} \
+  CONFIG.PRIM_IN_JITTER {0.010} \
+  CONFIG.PRIM_IN_TIMEPERIOD {10.000} \
+  CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.PSCLK_PORT {psclk} \
+  CONFIG.PSDONE_PORT {psdone} \
+  CONFIG.PSEN_PORT {psen} \
+  CONFIG.PSINCDEC_PORT {psincdec} \
+  CONFIG.REF_CLK_FREQ {100.0} \
+  CONFIG.RELATIVE_INCLK {REL_PRIMARY} \
+  CONFIG.RESET_BOARD_INTERFACE {Custom} \
+  CONFIG.RESET_PORT {resetn} \
+  CONFIG.RESET_TYPE {ACTIVE_LOW} \
+  CONFIG.SECONDARY_IN_FREQ {100.000} \
+  CONFIG.SECONDARY_IN_JITTER {0.010} \
+  CONFIG.SECONDARY_IN_TIMEPERIOD {10.000} \
+  CONFIG.SECONDARY_PORT {clk_in2} \
+  CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.SS_MODE {CENTER_HIGH} \
+  CONFIG.SS_MOD_FREQ {250} \
+  CONFIG.SS_MOD_TIME {0.004} \
+  CONFIG.STATUS_PORT {STATUS} \
+  CONFIG.SUMMARY_STRINGS {empty} \
+  CONFIG.USER_CLK_FREQ0 {100.0} \
+  CONFIG.USER_CLK_FREQ1 {100.0} \
+  CONFIG.USER_CLK_FREQ2 {100.0} \
+  CONFIG.USER_CLK_FREQ3 {100.0} \
+  CONFIG.USE_BOARD_FLOW {false} \
+  CONFIG.USE_CLKFB_STOPPED {false} \
+  CONFIG.USE_CLK_VALID {false} \
+  CONFIG.USE_CLOCK_SEQUENCING {false} \
+  CONFIG.USE_DYN_PHASE_SHIFT {false} \
+  CONFIG.USE_DYN_RECONFIG {false} \
+  CONFIG.USE_FREEZE {false} \
+  CONFIG.USE_FREQ_SYNTH {true} \
+  CONFIG.USE_INCLK_STOPPED {false} \
+  CONFIG.USE_INCLK_SWITCHOVER {false} \
+  CONFIG.USE_LOCKED {true} \
+  CONFIG.USE_MAX_I_JITTER {false} \
+  CONFIG.USE_MIN_O_JITTER {false} \
+  CONFIG.USE_MIN_POWER {false} \
+  CONFIG.USE_PHASE_ALIGNMENT {true} \
+  CONFIG.USE_POWER_DOWN {false} \
+  CONFIG.USE_RESET {true} \
+  CONFIG.USE_SAFE_CLOCK_STARTUP {false} \
+  CONFIG.USE_SPREAD_SPECTRUM {false} \
+  CONFIG.USE_STATUS {false} \
+  CONFIG.resetn.BOARD.ASSOCIATED_PARAM {RESET_BOARD_INTERFACE} \
+  CONFIG.resetn.INSERT_VIP {0} \
+  CONFIG.resetn.POLARITY {ACTIVE_LOW} " [get_ips encoder_system_clk_wiz_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:59 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0 (Rev. 139)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 245)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of encoder_decoder_sim_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 10)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'CLK_OUT6_PORT' from 'clk_out6' to 'slave_0' has been ignored for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'CLK_OUT7_PORT' from 'clk_out7' to 'slave_180' has been ignored for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'CLKOUT6_REQUESTED_OUT_FREQ' from '100.000' to '25.000' has been ignored for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'CLKOUT6_REQUESTED_PHASE' from '0.000' to '90.000' has been ignored for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'CLKOUT7_REQUESTED_OUT_FREQ' from '100.000' to '25.000' has been ignored for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'CLKOUT7_REQUESTED_PHASE' from '0.000' to '270.000' has been ignored for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT5_PHASE' from '0.000' to '90.000' has been ignored for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT6_PHASE' from '0.000' to '270.000' has been ignored for IP 'encoder_decoder_sim_clk_wiz_0_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:clk_wiz:6.0 -user_name encoder_decoder_sim_clk_wiz_0_0
+set_property -dict "\
+  CONFIG.AUTO_PRIMITIVE {MMCM} \
+  CONFIG.AXI_DRP {false} \
+  CONFIG.CALC_DONE {empty} \
+  CONFIG.CDDCDONE_PORT {cddcdone} \
+  CONFIG.CDDCREQ_PORT {cddcreq} \
+  CONFIG.CLKFB_IN_N_PORT {clkfb_in_n} \
+  CONFIG.CLKFB_IN_PORT {clkfb_in} \
+  CONFIG.CLKFB_IN_P_PORT {clkfb_in_p} \
+  CONFIG.CLKFB_IN_SIGNALING {SINGLE} \
+  CONFIG.CLKFB_OUT_N_PORT {clkfb_out_n} \
+  CONFIG.CLKFB_OUT_PORT {clkfb_out} \
+  CONFIG.CLKFB_OUT_P_PORT {clkfb_out_p} \
+  CONFIG.CLKFB_STOPPED_PORT {clkfb_stopped} \
+  CONFIG.CLKIN1_JITTER_PS {100.0} \
+  CONFIG.CLKIN1_UI_JITTER {0.010} \
+  CONFIG.CLKIN2_JITTER_PS {100.0} \
+  CONFIG.CLKIN2_UI_JITTER {0.010} \
+  CONFIG.CLKOUT1_DRIVES {BUFG} \
+  CONFIG.CLKOUT1_JITTER {159.475} \
+  CONFIG.CLKOUT1_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT1_PHASE_ERROR {105.461} \
+  CONFIG.CLKOUT1_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.000} \
+  CONFIG.CLKOUT1_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT1_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT1_USED {true} \
+  CONFIG.CLKOUT2_DRIVES {BUFG} \
+  CONFIG.CLKOUT2_JITTER {159.475} \
+  CONFIG.CLKOUT2_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT2_PHASE_ERROR {105.461} \
+  CONFIG.CLKOUT2_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50.000} \
+  CONFIG.CLKOUT2_REQUESTED_PHASE {180.000} \
+  CONFIG.CLKOUT2_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.CLKOUT3_DRIVES {BUFG} \
+  CONFIG.CLKOUT3_JITTER {137.681} \
+  CONFIG.CLKOUT3_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT3_PHASE_ERROR {105.461} \
+  CONFIG.CLKOUT3_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT3_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT3_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT3_USED {true} \
+  CONFIG.CLKOUT4_DRIVES {BUFG} \
+  CONFIG.CLKOUT4_JITTER {137.681} \
+  CONFIG.CLKOUT4_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT4_PHASE_ERROR {105.461} \
+  CONFIG.CLKOUT4_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT4_REQUESTED_PHASE {10.000} \
+  CONFIG.CLKOUT4_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT4_USED {true} \
+  CONFIG.CLKOUT5_DRIVES {BUFG} \
+  CONFIG.CLKOUT5_JITTER {159.475} \
+  CONFIG.CLKOUT5_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT5_PHASE_ERROR {105.461} \
+  CONFIG.CLKOUT5_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {50.000} \
+  CONFIG.CLKOUT5_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT5_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT5_USED {true} \
+  CONFIG.CLKOUT6_DRIVES {BUFG} \
+  CONFIG.CLKOUT6_JITTER {183.467} \
+  CONFIG.CLKOUT6_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT6_PHASE_ERROR {105.461} \
+  CONFIG.CLKOUT6_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT6_REQUESTED_OUT_FREQ {25.000} \
+  CONFIG.CLKOUT6_REQUESTED_PHASE {90.000} \
+  CONFIG.CLKOUT6_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT6_USED {false} \
+  CONFIG.CLKOUT7_DRIVES {BUFG} \
+  CONFIG.CLKOUT7_JITTER {183.467} \
+  CONFIG.CLKOUT7_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT7_PHASE_ERROR {105.461} \
+  CONFIG.CLKOUT7_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT7_REQUESTED_OUT_FREQ {25.000} \
+  CONFIG.CLKOUT7_REQUESTED_PHASE {270.000} \
+  CONFIG.CLKOUT7_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT7_USED {false} \
+  CONFIG.CLKOUTPHY_REQUESTED_FREQ {600.000} \
+  CONFIG.CLK_IN1_BOARD_INTERFACE {Custom} \
+  CONFIG.CLK_IN2_BOARD_INTERFACE {Custom} \
+  CONFIG.CLK_IN_SEL_PORT {clk_in_sel} \
+  CONFIG.CLK_OUT1_PORT {master_0} \
+  CONFIG.CLK_OUT1_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT2_PORT {master_180} \
+  CONFIG.CLK_OUT2_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT3_PORT {encoder} \
+  CONFIG.CLK_OUT3_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT4_PORT {decoder} \
+  CONFIG.CLK_OUT4_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT5_PORT {master_fb} \
+  CONFIG.CLK_OUT5_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT6_PORT {slave_0} \
+  CONFIG.CLK_OUT6_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT7_PORT {slave_180} \
+  CONFIG.CLK_OUT7_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_VALID_PORT {CLK_VALID} \
+  CONFIG.CLOCK_MGR_TYPE {auto} \
+  CONFIG.Component_Name {encoder_decoder_sim_clk_wiz_0_0} \
+  CONFIG.DADDR_PORT {daddr} \
+  CONFIG.DCLK_PORT {dclk} \
+  CONFIG.DEN_PORT {den} \
+  CONFIG.DIFF_CLK_IN1_BOARD_INTERFACE {Custom} \
+  CONFIG.DIFF_CLK_IN2_BOARD_INTERFACE {Custom} \
+  CONFIG.DIN_PORT {din} \
+  CONFIG.DOUT_PORT {dout} \
+  CONFIG.DRDY_PORT {drdy} \
+  CONFIG.DWE_PORT {dwe} \
+  CONFIG.ENABLE_CDDC {false} \
+  CONFIG.ENABLE_CLKOUTPHY {false} \
+  CONFIG.ENABLE_CLOCK_MONITOR {false} \
+  CONFIG.ENABLE_USER_CLOCK0 {false} \
+  CONFIG.ENABLE_USER_CLOCK1 {false} \
+  CONFIG.ENABLE_USER_CLOCK2 {false} \
+  CONFIG.ENABLE_USER_CLOCK3 {false} \
+  CONFIG.Enable_PLL0 {false} \
+  CONFIG.Enable_PLL1 {false} \
+  CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} \
+  CONFIG.INPUT_CLK_STOPPED_PORT {input_clk_stopped} \
+  CONFIG.INPUT_MODE {frequency} \
+  CONFIG.INTERFACE_SELECTION {Enable_AXI} \
+  CONFIG.IN_FREQ_UNITS {Units_MHz} \
+  CONFIG.IN_JITTER_UNITS {Units_UI} \
+  CONFIG.JITTER_OPTIONS {UI} \
+  CONFIG.JITTER_SEL {No_Jitter} \
+  CONFIG.LOCKED_PORT {locked} \
+  CONFIG.MMCM_BANDWIDTH {OPTIMIZED} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} \
+  CONFIG.MMCM_CLKFBOUT_PHASE {0.000} \
+  CONFIG.MMCM_CLKFBOUT_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKIN1_PERIOD {10.000} \
+  CONFIG.MMCM_CLKIN2_PERIOD {10.000} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {18.000} \
+  CONFIG.MMCM_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT0_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT0_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {18} \
+  CONFIG.MMCM_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT1_PHASE {180.000} \
+  CONFIG.MMCM_CLKOUT1_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT2_DIVIDE {9} \
+  CONFIG.MMCM_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT2_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT2_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT3_DIVIDE {9} \
+  CONFIG.MMCM_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT3_PHASE {10.000} \
+  CONFIG.MMCM_CLKOUT3_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT4_CASCADE {false} \
+  CONFIG.MMCM_CLKOUT4_DIVIDE {18} \
+  CONFIG.MMCM_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT4_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT4_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT5_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT5_PHASE {90.000} \
+  CONFIG.MMCM_CLKOUT5_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT6_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT6_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT6_PHASE {270.000} \
+  CONFIG.MMCM_CLKOUT6_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLOCK_HOLD {false} \
+  CONFIG.MMCM_COMPENSATION {ZHOLD} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {1} \
+  CONFIG.MMCM_NOTES {None} \
+  CONFIG.MMCM_REF_JITTER1 {0.010} \
+  CONFIG.MMCM_REF_JITTER2 {0.010} \
+  CONFIG.MMCM_STARTUP_WAIT {false} \
+  CONFIG.NUM_OUT_CLKS {5} \
+  CONFIG.OPTIMIZE_CLOCKING_STRUCTURE_EN {false} \
+  CONFIG.OVERRIDE_MMCM {false} \
+  CONFIG.OVERRIDE_PLL {false} \
+  CONFIG.PHASESHIFT_MODE {WAVEFORM} \
+  CONFIG.PHASE_DUTY_CONFIG {false} \
+  CONFIG.PLATFORM {UNKNOWN} \
+  CONFIG.PLL_BANDWIDTH {OPTIMIZED} \
+  CONFIG.PLL_CLKFBOUT_MULT {4} \
+  CONFIG.PLL_CLKFBOUT_PHASE {0.000} \
+  CONFIG.PLL_CLKIN_PERIOD {10.000} \
+  CONFIG.PLL_CLKOUT0_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT0_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT1_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT1_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT2_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT2_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT3_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT3_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT4_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT4_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT5_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT5_PHASE {0.000} \
+  CONFIG.PLL_CLK_FEEDBACK {CLKFBOUT} \
+  CONFIG.PLL_COMPENSATION {SYSTEM_SYNCHRONOUS} \
+  CONFIG.PLL_DIVCLK_DIVIDE {1} \
+  CONFIG.PLL_NOTES {None} \
+  CONFIG.PLL_REF_JITTER {0.010} \
+  CONFIG.POWER_DOWN_PORT {power_down} \
+  CONFIG.PRECISION {1} \
+  CONFIG.PRIMARY_PORT {clk_in1} \
+  CONFIG.PRIMITIVE {MMCM} \
+  CONFIG.PRIMTYPE_SEL {mmcm_adv} \
+  CONFIG.PRIM_IN_FREQ {100.000} \
+  CONFIG.PRIM_IN_JITTER {0.010} \
+  CONFIG.PRIM_IN_TIMEPERIOD {10.000} \
+  CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.PSCLK_PORT {psclk} \
+  CONFIG.PSDONE_PORT {psdone} \
+  CONFIG.PSEN_PORT {psen} \
+  CONFIG.PSINCDEC_PORT {psincdec} \
+  CONFIG.REF_CLK_FREQ {100.0} \
+  CONFIG.RELATIVE_INCLK {REL_PRIMARY} \
+  CONFIG.RESET_BOARD_INTERFACE {Custom} \
+  CONFIG.RESET_PORT {resetn} \
+  CONFIG.RESET_TYPE {ACTIVE_LOW} \
+  CONFIG.SECONDARY_IN_FREQ {100.000} \
+  CONFIG.SECONDARY_IN_JITTER {0.010} \
+  CONFIG.SECONDARY_IN_TIMEPERIOD {10.000} \
+  CONFIG.SECONDARY_PORT {clk_in2} \
+  CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.SS_MODE {CENTER_HIGH} \
+  CONFIG.SS_MOD_FREQ {250} \
+  CONFIG.SS_MOD_TIME {0.004} \
+  CONFIG.STATUS_PORT {STATUS} \
+  CONFIG.SUMMARY_STRINGS {empty} \
+  CONFIG.USER_CLK_FREQ0 {100.0} \
+  CONFIG.USER_CLK_FREQ1 {100.0} \
+  CONFIG.USER_CLK_FREQ2 {100.0} \
+  CONFIG.USER_CLK_FREQ3 {100.0} \
+  CONFIG.USE_BOARD_FLOW {false} \
+  CONFIG.USE_CLKFB_STOPPED {false} \
+  CONFIG.USE_CLK_VALID {false} \
+  CONFIG.USE_CLOCK_SEQUENCING {false} \
+  CONFIG.USE_DYN_PHASE_SHIFT {false} \
+  CONFIG.USE_DYN_RECONFIG {false} \
+  CONFIG.USE_FREEZE {false} \
+  CONFIG.USE_FREQ_SYNTH {true} \
+  CONFIG.USE_INCLK_STOPPED {false} \
+  CONFIG.USE_INCLK_SWITCHOVER {false} \
+  CONFIG.USE_LOCKED {true} \
+  CONFIG.USE_MAX_I_JITTER {false} \
+  CONFIG.USE_MIN_O_JITTER {false} \
+  CONFIG.USE_MIN_POWER {false} \
+  CONFIG.USE_PHASE_ALIGNMENT {true} \
+  CONFIG.USE_POWER_DOWN {false} \
+  CONFIG.USE_RESET {true} \
+  CONFIG.USE_SAFE_CLOCK_STARTUP {false} \
+  CONFIG.USE_SPREAD_SPECTRUM {false} \
+  CONFIG.USE_STATUS {false} \
+  CONFIG.resetn.BOARD.ASSOCIATED_PARAM {RESET_BOARD_INTERFACE} \
+  CONFIG.resetn.INSERT_VIP {0} \
+  CONFIG.resetn.POLARITY {ACTIVE_LOW} " [get_ips encoder_decoder_sim_clk_wiz_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_axi_vip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_axi_vip_0_0 (xilinx.com:ip:axi_vip:1.1 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:46:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0 (Rev. 139)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:42:07 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 138) to (Rev. 139)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_system_axi_spi_interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_en_ext'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:42:04 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 242) to (Rev. 245)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_pll_0'
+
+-Upgrade has removed port 'spi_clk_pll_180'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 17 13:42:04 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 138) to (Rev. 139)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_axi_spi_interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_en_ext'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 15:57:27 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 239) to (Rev. 242)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_pll_fb_in'
+
+-Upgrade has removed port 'spi_clk_pll_fb_out'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 14:54:34 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 237) to (Rev. 239)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'spi_clk_pll_0'
+
+-Upgrade has added port 'spi_clk_pll_180'
+
+-Upgrade has added port 'spi_clk_pll_fb_in'
+
+-Upgrade has added port 'spi_clk_pll_fb_out'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 11:52:43 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 136) to (Rev. 138)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul 16 11:52:40 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 136) to (Rev. 138)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 21:39:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 236) to (Rev. 237)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 20:30:53 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 231) to (Rev. 236)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 17:26:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 230) to (Rev. 231)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 16:57:36 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 229) to (Rev. 230)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 16:32:41 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 228) to (Rev. 229)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 16:20:25 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 227) to (Rev. 228)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 15:13:25 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 226) to (Rev. 227)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 14:13:28 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 135) to (Rev. 136)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'SPI_DUMMY_BITS' is no longer present on the upgraded IP 'encoder_system_axi_spi_interface_0_0', and cannot be set to '1'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:axi_spi_interface:1.0 -user_name encoder_system_axi_spi_interface_0_0
+set_property -dict "\
+  CONFIG.C_S00_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_S00_AXI_BASEADDR {0x40000000} \
+  CONFIG.C_S00_AXI_DATA_WIDTH {32} \
+  CONFIG.C_S00_AXI_HIGHADDR {0x4000FFFF} \
+  CONFIG.Component_Name {encoder_system_axi_spi_interface_0_0} \
+  CONFIG.S00_AXI.ADDR_WIDTH {4} \
+  CONFIG.S00_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S00_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S00_AXI.BUSER_WIDTH {0} \
+  CONFIG.S00_AXI.CLK_DOMAIN {encoder_system_processing_system7_0_2_FCLK_CLK0} \
+  CONFIG.S00_AXI.DATA_WIDTH {32} \
+  CONFIG.S00_AXI.FREQ_HZ {100000000} \
+  CONFIG.S00_AXI.HAS_BRESP {1} \
+  CONFIG.S00_AXI.HAS_BURST {0} \
+  CONFIG.S00_AXI.HAS_CACHE {0} \
+  CONFIG.S00_AXI.HAS_LOCK {0} \
+  CONFIG.S00_AXI.HAS_PROT {1} \
+  CONFIG.S00_AXI.HAS_QOS {0} \
+  CONFIG.S00_AXI.HAS_REGION {0} \
+  CONFIG.S00_AXI.HAS_RRESP {1} \
+  CONFIG.S00_AXI.HAS_WSTRB {1} \
+  CONFIG.S00_AXI.ID_WIDTH {0} \
+  CONFIG.S00_AXI.INSERT_VIP {0} \
+  CONFIG.S00_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S00_AXI.NUM_READ_OUTSTANDING {8} \
+  CONFIG.S00_AXI.NUM_READ_THREADS {4} \
+  CONFIG.S00_AXI.NUM_WRITE_OUTSTANDING {8} \
+  CONFIG.S00_AXI.NUM_WRITE_THREADS {4} \
+  CONFIG.S00_AXI.PHASE {0.0} \
+  CONFIG.S00_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S00_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S00_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S00_AXI.RUSER_WIDTH {0} \
+  CONFIG.S00_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S00_AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.S00_AXI.WIZ_NUM_REG {4} \
+  CONFIG.S00_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S00_AXI.WUSER_WIDTH {0} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_BUSIF {S00_AXI} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_PORT {} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_RESET {s00_axi_aresetn} \
+  CONFIG.S00_AXI_CLK.CLK_DOMAIN {encoder_system_processing_system7_0_2_FCLK_CLK0} \
+  CONFIG.S00_AXI_CLK.FREQ_HZ {100000000} \
+  CONFIG.S00_AXI_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.S00_AXI_CLK.INSERT_VIP {0} \
+  CONFIG.S00_AXI_CLK.PHASE {0.0} \
+  CONFIG.S00_AXI_RST.INSERT_VIP {0} \
+  CONFIG.S00_AXI_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.SPI_CLK_FB_DELAY_WIDTH {4} \
+  CONFIG.SPI_EXIT_INTERVAL {1} \
+  CONFIG.SPI_INIT_INTERVAL {2} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_SHIFT_IN_COMP {1} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} " [get_ips encoder_system_axi_spi_interface_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 14:13:26 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 135) to (Rev. 136)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'SPI_DUMMY_BITS' is no longer present on the upgraded IP 'encoder_decoder_sim_axi_spi_interface_0_0', and cannot be set to '2'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:axi_spi_interface:1.0 -user_name encoder_decoder_sim_axi_spi_interface_0_0
+set_property -dict "\
+  CONFIG.C_S00_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_S00_AXI_BASEADDR {0x40000000} \
+  CONFIG.C_S00_AXI_DATA_WIDTH {32} \
+  CONFIG.C_S00_AXI_HIGHADDR {0x4000FFFF} \
+  CONFIG.Component_Name {encoder_decoder_sim_axi_spi_interface_0_0} \
+  CONFIG.S00_AXI.ADDR_WIDTH {4} \
+  CONFIG.S00_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S00_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S00_AXI.BUSER_WIDTH {0} \
+  CONFIG.S00_AXI.CLK_DOMAIN {/clk_wiz_0_clk_out1} \
+  CONFIG.S00_AXI.DATA_WIDTH {32} \
+  CONFIG.S00_AXI.FREQ_HZ {100000000} \
+  CONFIG.S00_AXI.HAS_BRESP {1} \
+  CONFIG.S00_AXI.HAS_BURST {0} \
+  CONFIG.S00_AXI.HAS_CACHE {0} \
+  CONFIG.S00_AXI.HAS_LOCK {0} \
+  CONFIG.S00_AXI.HAS_PROT {1} \
+  CONFIG.S00_AXI.HAS_QOS {0} \
+  CONFIG.S00_AXI.HAS_REGION {0} \
+  CONFIG.S00_AXI.HAS_RRESP {1} \
+  CONFIG.S00_AXI.HAS_WSTRB {1} \
+  CONFIG.S00_AXI.ID_WIDTH {0} \
+  CONFIG.S00_AXI.INSERT_VIP {0} \
+  CONFIG.S00_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S00_AXI.NUM_READ_OUTSTANDING {1} \
+  CONFIG.S00_AXI.NUM_READ_THREADS {1} \
+  CONFIG.S00_AXI.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.S00_AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.S00_AXI.PHASE {0.0} \
+  CONFIG.S00_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S00_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S00_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S00_AXI.RUSER_WIDTH {0} \
+  CONFIG.S00_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S00_AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.S00_AXI.WIZ_NUM_REG {4} \
+  CONFIG.S00_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S00_AXI.WUSER_WIDTH {0} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_BUSIF {S00_AXI} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_PORT {} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_RESET {s00_axi_aresetn} \
+  CONFIG.S00_AXI_CLK.CLK_DOMAIN {/clk_wiz_0_clk_out1} \
+  CONFIG.S00_AXI_CLK.FREQ_HZ {100000000} \
+  CONFIG.S00_AXI_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.S00_AXI_CLK.INSERT_VIP {0} \
+  CONFIG.S00_AXI_CLK.PHASE {0.0} \
+  CONFIG.S00_AXI_RST.INSERT_VIP {0} \
+  CONFIG.S00_AXI_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.SPI_CLK_FB_DELAY_WIDTH {4} \
+  CONFIG.SPI_EXIT_INTERVAL {1} \
+  CONFIG.SPI_INIT_INTERVAL {3} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_SHIFT_IN_COMP {1} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} " [get_ips encoder_decoder_sim_axi_spi_interface_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 13:36:29 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 225) to (Rev. 226)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 12:54:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 224) to (Rev. 225)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 12:40:49 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 223) to (Rev. 224)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 12:17:11 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 222) to (Rev. 223)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 12:14:50 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 221) to (Rev. 222)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 11:02:23 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 220) to (Rev. 221)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul 15 10:10:05 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 216) to (Rev. 220)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'SPI_PING_PONG_SIZE' is no longer present on the upgraded IP 'encoder_decoder_sim_decoder_top_v3_0_0', and cannot be set to '4'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:decoder_top_v3:3.0 -user_name encoder_decoder_sim_decoder_top_v3_0_0
+set_property -dict "\
+  CONFIG.COMMS_DEBUG {true} \
+  CONFIG.CTRL_REG_NUM {1} \
+  CONFIG.Component_Name {encoder_decoder_sim_decoder_top_v3_0_0} \
+  CONFIG.DATA_WIDTH {32} \
+  CONFIG.ERROR_COUNT_WIDTH {4} \
+  CONFIG.LEDS_REG_NUM {15} \
+  CONFIG.MAX_ERROR_COUNT {15} \
+  CONFIG.NUM_REGS_PER_BANK {16} \
+  CONFIG.REG_BANK_ADDR_WIDTH {4} \
+  CONFIG.SHIFT_IN_COMP {0} \
+  CONFIG.SHIFT_OUT_COMP {0} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} \
+  CONFIG.STAT_REG_NUM {0} " [get_ips encoder_decoder_sim_decoder_top_v3_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 14:23:57 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 215) to (Rev. 216)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 14:00:56 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 214) to (Rev. 215)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 12:30:26 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 213) to (Rev. 214)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 07:57:27 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 212) to (Rev. 213)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 01:39:03 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 209) to (Rev. 212)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 00:28:36 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 208) to (Rev. 209)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul 14 00:04:04 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 207) to (Rev. 208)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 23:55:48 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 206) to (Rev. 207)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 23:45:23 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 204) to (Rev. 206)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 22:16:54 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 204)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 22:16:27 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 202) to (Rev. 204)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_pll_0'
+
+-Upgrade has removed port 'spi_clk_pll_180'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 22:09:19 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 202)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 22:09:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 201) to (Rev. 202)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 22:05:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 200) to (Rev. 201)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 21:30:58 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 200)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 21:30:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 199) to (Rev. 200)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 21:18:38 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 199)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 21:18:25 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 198) to (Rev. 199)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 21:08:32 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 198)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 21:08:21 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 197) to (Rev. 198)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 21:05:18 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 196) to (Rev. 197)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 17:33:44 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 196)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 17:33:27 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 195) to (Rev. 196)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 17:29:32 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 194) to (Rev. 195)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 12:17:06 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 193) to (Rev. 194)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 11:14:01 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 193)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 11:13:47 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 192) to (Rev. 193)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 11:11:30 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 192)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 11:11:18 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 190) to (Rev. 192)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_en'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 10:59:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 190)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul 13 10:59:06 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 189) to (Rev. 190)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 22:25:14 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 188) to (Rev. 189)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 17:20:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 134) to (Rev. 135)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 17:20:14 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 134) to (Rev. 135)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 17:05:45 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 187) to (Rev. 188)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 17:02:24 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 186) to (Rev. 187)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 16:47:02 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 185) to (Rev. 186)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 16:06:29 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 184) to (Rev. 185)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 16:04:41 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 183) to (Rev. 184)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 15:38:26 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 182) to (Rev. 183)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 15:31:50 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 181) to (Rev. 182)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 15:29:22 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 178) to (Rev. 181)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 14:19:41 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 177) to (Rev. 178)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 13:37:01 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 174) to (Rev. 177)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 10:39:19 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 173) to (Rev. 174)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 10:37:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 172) to (Rev. 173)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 02:18:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 172)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 02:18:06 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 171) to (Rev. 172)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 01:48:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 171)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 01:48:05 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 170) to (Rev. 171)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 00:52:41 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 170)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 00:52:26 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 169) to (Rev. 170)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 00:50:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 169)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 00:50:03 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 168) to (Rev. 169)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 00:42:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 168)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 12 00:42:03 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 167) to (Rev. 168)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 23:54:34 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 167)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 23:54:23 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 166) to (Rev. 167)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 23:26:35 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 166)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 23:26:22 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 165) to (Rev. 166)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 22:23:57 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0 (Rev. 165)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 22:23:38 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 164) to (Rev. 165)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 20:03:05 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 163) to (Rev. 164)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 19:45:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 162) to (Rev. 163)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 19:41:26 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 161) to (Rev. 162)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 19:39:09 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 160) to (Rev. 161)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 18:51:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 159) to (Rev. 160)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 18:44:35 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 158) to (Rev. 159)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 18:29:53 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 157) to (Rev. 158)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 18:00:39 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 156) to (Rev. 157)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 17:47:07 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 155) to (Rev. 156)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 17:39:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 154) to (Rev. 155)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jul 11 17:32:55 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 153) to (Rev. 154)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_fb'
+
+-Upgrade has removed port 'spi_clk_to_pll'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'SPI_SAMPLER_SIZE' is no longer present on the upgraded IP 'encoder_decoder_sim_decoder_top_v3_0_0', and cannot be set to '2'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:decoder_top_v3:3.0 -user_name encoder_decoder_sim_decoder_top_v3_0_0
+set_property -dict "\
+  CONFIG.COMMS_DEBUG {true} \
+  CONFIG.CTRL_REG_NUM {1} \
+  CONFIG.Component_Name {encoder_decoder_sim_decoder_top_v3_0_0} \
+  CONFIG.DATA_WIDTH {32} \
+  CONFIG.ERROR_COUNT_WIDTH {4} \
+  CONFIG.LEDS_REG_NUM {15} \
+  CONFIG.MAX_ERROR_COUNT {15} \
+  CONFIG.NUM_REGS_PER_BANK {16} \
+  CONFIG.REG_BANK_ADDR_WIDTH {4} \
+  CONFIG.SHIFT_IN_COMP {0} \
+  CONFIG.SHIFT_OUT_COMP {0} \
+  CONFIG.SPI_PING_PONG_SIZE {4} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} \
+  CONFIG.STAT_REG_NUM {0} " [get_ips encoder_decoder_sim_decoder_top_v3_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 19:38:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 152) to (Rev. 153)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 19:11:38 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 151) to (Rev. 152)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 18:53:27 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 150) to (Rev. 151)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 17:05:39 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 149) to (Rev. 150)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 17:02:19 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 148) to (Rev. 149)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 16:38:00 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 147) to (Rev. 148)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 15:41:32 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 146) to (Rev. 147)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 15:39:54 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 145) to (Rev. 146)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 15:15:50 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 144) to (Rev. 145)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 15:13:57 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 143) to (Rev. 144)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 11:49:40 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 142) to (Rev. 143)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 11:09:26 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 141) to (Rev. 142)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 10:42:11 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 140) to (Rev. 141)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 10:26:53 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 139) to (Rev. 140)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 10:21:56 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 138) to (Rev. 139)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 10:06:58 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 137) to (Rev. 138)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 09:26:26 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 134) to (Rev. 137)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 08:09:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 133) to (Rev. 134)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 07:38:23 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 132) to (Rev. 133)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 06:57:20 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 131) to (Rev. 132)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 05:41:59 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 130) to (Rev. 131)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jul 10 03:14:21 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 129) to (Rev. 130)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 23:10:05 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 128) to (Rev. 129)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 23:07:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 127) to (Rev. 128)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 18:10:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 126) to (Rev. 127)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 18:01:27 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 133) to (Rev. 134)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 18:01:24 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 133) to (Rev. 134)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 17:53:36 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 125) to (Rev. 126)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 17:32:33 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 124) to (Rev. 125)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 17:23:01 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 123) to (Rev. 124)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 17:11:15 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 122) to (Rev. 123)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 17:05:38 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 121) to (Rev. 122)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 16:50:41 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 120) to (Rev. 121)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 16:45:48 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 119) to (Rev. 120)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 16:34:54 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 118) to (Rev. 119)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 15:51:13 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 117) to (Rev. 118)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 15:33:40 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 116) to (Rev. 117)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 14:56:08 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 114) to (Rev. 116)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Jul  9 11:44:28 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 113) to (Rev. 114)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 23:52:04 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 109) to (Rev. 113)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 21:25:45 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 107) to (Rev. 109)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 17:22:39 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 106) to (Rev. 107)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 17:11:04 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 105) to (Rev. 106)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 16:55:46 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 104) to (Rev. 105)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 16:41:54 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 103) to (Rev. 104)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 16:36:33 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 102) to (Rev. 103)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Jul  8 16:12:10 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 101) to (Rev. 102)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jul  7 19:36:18 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 96) to (Rev. 101)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 21:23:10 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 95) to (Rev. 96)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 21:04:44 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 94) to (Rev. 95)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 20:51:04 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 92) to (Rev. 94)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 20:40:30 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 91) to (Rev. 92)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 20:17:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 108) to (Rev. 133)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_system_axi_spi_interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'gen_spi_clk_fb_0'
+
+-Upgrade has added port 'spi_clk_en_ext'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 20:17:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 29) to (Rev. 91)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_decoder_top_v3_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk'
+
+-Upgrade has added port 'spi_clk_en'
+
+-Upgrade has added port 'spi_clk_ext'
+
+-Upgrade has added port 'spi_clk_fb'
+
+-Upgrade has added port 'spi_clk_pll_0'
+
+-Upgrade has added port 'spi_clk_pll_180'
+
+-Upgrade has added port 'spi_clk_to_pll'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'CONTROL_SAMPLER_SIZE' is no longer present on the upgraded IP 'encoder_decoder_sim_decoder_top_v3_0_0', and cannot be set to '3'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:decoder_top_v3:3.0 -user_name encoder_decoder_sim_decoder_top_v3_0_0
+set_property -dict "\
+  CONFIG.CTRL_REG_NUM {1} \
+  CONFIG.Component_Name {encoder_decoder_sim_decoder_top_v3_0_0} \
+  CONFIG.DATA_WIDTH {32} \
+  CONFIG.ERROR_COUNT_WIDTH {4} \
+  CONFIG.MAX_ERROR_COUNT {15} \
+  CONFIG.NUM_REGS_PER_BANK {16} \
+  CONFIG.REG_BANK_ADDR_WIDTH {4} \
+  CONFIG.SPI_PING_PONG_SIZE {4} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_SAMPLER_SIZE {2} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} \
+  CONFIG.STAT_REG_NUM {0} " [get_ips encoder_decoder_sim_decoder_top_v3_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jul  6 20:17:16 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_decoder_sim_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 108) to (Rev. 133)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_decoder_sim_axi_spi_interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'gen_spi_clk_fb_0'
+
+-Upgrade has added port 'spi_clk_en_ext'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 20:53:37 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 28) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 20:39:56 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 17:08:14 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 15:28:53 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_decoder_sim_decoder_top_v3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_decoder_sim_decoder_top_v3_0_0 (xilinx.com:user:decoder_top_v3:3.0) from (Rev. 24) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 13:30:32 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 107) to (Rev. 108)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'SPI_CLK_SCALE' is no longer present on the upgraded IP 'encoder_system_axi_spi_interface_0_0', and cannot be set to '2'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:axi_spi_interface:1.0 -user_name encoder_system_axi_spi_interface_0_0
+set_property -dict "\
+  CONFIG.C_S00_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_S00_AXI_BASEADDR {0x40000000} \
+  CONFIG.C_S00_AXI_DATA_WIDTH {32} \
+  CONFIG.C_S00_AXI_HIGHADDR {0x4000FFFF} \
+  CONFIG.Component_Name {encoder_system_axi_spi_interface_0_0} \
+  CONFIG.S00_AXI.ADDR_WIDTH {4} \
+  CONFIG.S00_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S00_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S00_AXI.BUSER_WIDTH {0} \
+  CONFIG.S00_AXI.CLK_DOMAIN {} \
+  CONFIG.S00_AXI.DATA_WIDTH {32} \
+  CONFIG.S00_AXI.FREQ_HZ {100000000} \
+  CONFIG.S00_AXI.HAS_BRESP {1} \
+  CONFIG.S00_AXI.HAS_BURST {0} \
+  CONFIG.S00_AXI.HAS_CACHE {0} \
+  CONFIG.S00_AXI.HAS_LOCK {0} \
+  CONFIG.S00_AXI.HAS_PROT {1} \
+  CONFIG.S00_AXI.HAS_QOS {0} \
+  CONFIG.S00_AXI.HAS_REGION {0} \
+  CONFIG.S00_AXI.HAS_RRESP {1} \
+  CONFIG.S00_AXI.HAS_WSTRB {1} \
+  CONFIG.S00_AXI.ID_WIDTH {0} \
+  CONFIG.S00_AXI.INSERT_VIP {0} \
+  CONFIG.S00_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S00_AXI.NUM_READ_OUTSTANDING {1} \
+  CONFIG.S00_AXI.NUM_READ_THREADS {1} \
+  CONFIG.S00_AXI.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.S00_AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.S00_AXI.PHASE {0.0} \
+  CONFIG.S00_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S00_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S00_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S00_AXI.RUSER_WIDTH {0} \
+  CONFIG.S00_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S00_AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.S00_AXI.WIZ_NUM_REG {4} \
+  CONFIG.S00_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S00_AXI.WUSER_WIDTH {0} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_BUSIF {S00_AXI} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_PORT {} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_RESET {s00_axi_aresetn} \
+  CONFIG.S00_AXI_CLK.CLK_DOMAIN {} \
+  CONFIG.S00_AXI_CLK.FREQ_HZ {100000000} \
+  CONFIG.S00_AXI_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.S00_AXI_CLK.INSERT_VIP {0} \
+  CONFIG.S00_AXI_CLK.PHASE {0.0} \
+  CONFIG.S00_AXI_RST.INSERT_VIP {0} \
+  CONFIG.S00_AXI_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.SPI_CLK_FB_DELAY_WIDTH {3} \
+  CONFIG.SPI_DUMMY_BITS {1} \
+  CONFIG.SPI_EXIT_INTERVAL {1} \
+  CONFIG.SPI_INIT_INTERVAL {2} \
+  CONFIG.SPI_RD_ADDR_WIDTH {4} \
+  CONFIG.SPI_WR_ADDR_WIDTH {4} " [get_ips encoder_system_axi_spi_interface_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Jun 23 13:17:48 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 101) to (Rev. 107)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_system_axi_spi_interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'spi_clk_feedback'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jun 22 03:36:56 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 100) to (Rev. 101)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jun 22 03:28:07 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 99) to (Rev. 100)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_system_axi_spi_interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'spi_clk_feedback'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jun 22 02:57:02 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 98) to (Rev. 99)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jun 22 01:00:58 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 94) to (Rev. 98)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jun 21 18:55:17 2023
+| Host         : LAPTOP-SRGHD2GT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'encoder_system_axi_spi_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of encoder_system_axi_spi_interface_0_0 (xilinx.com:user:axi_spi_interface:1.0) from (Rev. 93) to (Rev. 94)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'encoder_system_axi_spi_interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'gen_spi_clk_270'
+
+-Upgrade has removed port 'gen_spi_clk_90'
+
+

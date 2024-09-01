@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/encoder_system/ip/encoder_system_rst_ps7_0_100M_0/sim/encoder_system_rst_ps7_0_100M_0.vhd" \
+
+nosort
